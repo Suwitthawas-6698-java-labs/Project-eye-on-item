@@ -1,0 +1,24 @@
+.sticker {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.sticker img{
+    max-width: 54px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textCenter h1{
+    font-size: 30px;
+}
+
+.textCenter a {
+    color: white;
+    font-size: 20px;
+}

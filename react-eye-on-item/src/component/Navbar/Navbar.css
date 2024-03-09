@@ -1,0 +1,237 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px 0px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 15px 30px;
+    height: 60px;
+    transition: 0.25s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+    color: #B2442B;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 15px;
+}
+
+.menu ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu ul li button {
+    color: #B2442B;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 6px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.menu ul li button:hover {
+    color: white;
+    background-color: #B2442B;
+    border-radius: 30px;
+}
+
+.nav-howto {
+    background-color: #B2442B;
+    /* Set the background color for nav-red-bg */
+
+    .menu .howto {
+        color: #B2442B;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+
+    .logo a {
+        color: white;
+    }
+
+    .menu ul li button {
+        color: white;
+        background-color: #B2442B;
+    }
+
+    .menu ul li button:hover {
+        color: #B2442B;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+}
+
+.nav-prevent {
+    background-color: #B2442B;
+    /* Set the background color for nav-red-bg */
+
+    .menu .prevent {
+        color: #B2442B;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+
+    .logo a {
+        color: white;
+    }
+
+    .menu ul li button {
+        color: white;
+        background-color: #B2442B;
+    }
+
+    .menu ul li button:hover {
+        color: #B2442B;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+}
+
+.nav-muteloo {
+    background-color: #B2442B;
+    /* Set the background color for nav-red-bg */
+
+    .menu .muteloo {
+        color: #B2442B;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+
+    .logo a {
+        color: white;
+    }
+
+    .menu ul li button {
+        color: white;
+        background-color: #B2442B;
+    }
+
+    .menu ul li button:hover {
+        color: #B2442B;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+}
+
+.nav-PreventElectronic {
+    background-color: #ffffff;
+    /* Set the background color for nav-red-bg */
+
+    .menu .prevent {
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 30px;
+    }
+
+    .logo a {
+        color: rgb(0, 0, 0);
+    }
+
+    .menu ul li button {
+        color: rgb(0, 0, 0);
+        background-color: white;
+    }
+
+    .menu ul li button:hover {
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 30px;
+    }
+}
+
+.nav-PreventPerson {
+    background-color: #000000;
+    /* Set the background color for nav-red-bg */
+
+    .menu .prevent {
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+
+    .logo a {
+        color: rgb(255, 255, 255);
+    }
+
+    .menu ul li button {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+    }
+
+    .menu ul li button:hover {
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+}
+
+.nav-PreventEtc {
+    background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(255, 255, 255));
+    /* Set the background color for nav-red-bg */
+
+    .menu .prevent {
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 30px;
+    }
+
+    .logo a {
+        color: rgb(255, 255, 255);
+    }
+
+    .menu ul li button {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+    }
+
+    .menu ul li button:hover {
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 30px;
+    }
+}
+
+.nav-PreventPet {
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(0, 0, 0));
+    /* Set the background color for nav-red-bg */
+
+    .menu .prevent {
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+
+    .logo a {
+        color: rgb(0, 0, 0);
+    }
+
+    .menu ul li button {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+    }
+
+    .menu ul li button:hover {
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,68 @@
+.bg-prevent {
+    background-image: url("../Asset/bg-prevent.svg");
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Use viewport height to make it responsive */ /* Enable scrolling if content exceeds the viewport */
+}
+
+.info-prevent {
+    position: relative;
+    top: 110px;
+    left: 20px;
+    padding: 40px 30px;
+}
+
+.prevent-lebel {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(0deg, #B2442B, #6A1147);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info-prevent {
+    text-align: center;
+}
+
+.layout-intro-prevent {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.firstline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.Electronic, .person-info, .etc, .pet {
+    padding: 5px 30px;
+    width: 284px;
+    height: 56px;
+    border-radius: 26px;
+    border: #B2442B 1px solid;
+    color: #B2442B;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.Electronic:hover, .person-info:hover, .etc:hover, .pet:hover {
+    color: #ffffff;
+    background-color: #B2442B;
+}
+
+.secondline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    gap: 100px;
+}

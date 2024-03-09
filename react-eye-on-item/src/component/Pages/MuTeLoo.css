@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-overflow {
+    overflow: hidden;
+    height: 100%;
+}
+
+.bg-intro-Mu {
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100vh;
+}
+
+.introPage {
+    position: relative;
+    top: 90px;
+    left: 20px;
+    padding: 40px 30px;
+}
+
+.textInfo h1 {
+    color: #B2442B;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    left: 1100px;
+}
+
+.textInfo a {
+    font-size: 30px;
+    position: absolute;
+    left: 850px;
+    top: 200px;
+    /* white-space: pre; */
+    width: 570px;
+    border: 0px solid #FFFFFF;
+    /* padding: 10px; */
+}
+
+.textInfo aside {
+    position: relative;
+    left: 50px;
+    top: -100px;
+}
+
+.introPage button {
+    position: relative;
+    font-size: 18px;
+    border-radius: 39px;
+    width: 200px;
+    height: 60px;
+    top: -200px;
+    left: 900px;
+    border: #B2442B 2px solid;
+    color: #B2442B;
+    background-color: transparent;
+    /*make color like bg */
+}
+
+.slotPage {
+    /* background-image: url("../Asset/bgSlotPage.svg"); */
+    background: linear-gradient(180deg, rgba(178, 68, 43, 1) 0%, rgba(22, 6, 3, 1) 100%);
+    /* background-size: cover;  */
+    /* background-position: center; */
+    /* background-size: 90%; */
+    position: relative;
+    /* top: 110px;
+    left: 20px; */
+    padding: 40px 30px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+
+
+
+
+.textInfo-slotPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.textInfo-slotPage h1 {
+    color: #B2442B;
+    font-size: 48px;
+    position: relative;
+    left: 60vh;
+    /* in center point*/
+
+}
+
+.textInfo-slotPage a1,
+a2,
+a3,
+a4,
+a5,
+a6 {
+    border: 1px solid red;
+    border-radius: 25px;
+    padding: 5px;
+    width: 13.5rem;
+    color: white;
+}
+
+.textInfo-slotPage a7,
+a8 {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    top: 350px;
+    text-align: center;
+    /* let text อยู่ตรงกลาง*/
+
+}
+
+/* เว้นไว้สำหรับทำ element ใน slot page */
+
+.prayPage {
+    background: linear-gradient(180deg, rgba(178, 68, 43, 1) 0%, rgba(22, 6, 3, 1) 100%);
+    /* position: relative; */
+    top: 20px;
+    left: 20px;
+    padding: 40px 30px;
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-pray-layout {
+    /* border: 1px solid white; */
+    position: relative;
+    top: -100px;
+}
+/* Pray Page Header*/
+.element-pray-header {
+    /* border: 1px solid white; */
+    width: fit-content;
+    height: inherit;
+    position: relative;
+    top: 100px;
+    left: 430px;
+    z-index: 5;
+}
+
+.elementBG {
+    position: relative;
+    top: -60px;
+    left: 350px;
+    z-index: 1;
+}
+
+.element-side {
+    display: flex;
+    position: relative;
+    top: -700px;
+    justify-content: space-between;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.pray-layout {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    z-index: 3;
+    display: flex;
+    /* border: 1px solid white; */
+    top: -1100px;
+    left: 225px;
+    /* justify-content: space-between; */
+
+}
+
+.pray-carousel {
+    position: relative;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.mon-slide,
+.tues-slide,
+.wed-slide,
+.thu-slide,
+.fri-slide,
+.sat-slide,
+.sun-slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* justify-content: space-between; */
+}
+
+.prayNextArrow,
+.prayPrevArrow {
+    z-index: 3;
+    position: absolute;
+    /* bottom: 30px; */
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgba(192, 141, 75, 1);
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.prayNextArrow:hover,
+.prayPrevArrow:hover {
+    background-color: rgba(192, 141, 75, 1);
+    color: white;
+}
+
+.prayNextArrow {
+    right: 189px;
+    top: 175px;
+}
+
+.prayPrevArrow {
+    top: 175px;
+    left: 187px;
+}
+
+/* เว้นไว้สำหรับทำ element ใน praypage เพิ่ม slide ให้กดต่อไปได้ */
+.colorShirtPage {
+    background: linear-gradient(180deg, rgba(22, 6, 3, 1) 0%, rgba(162, 62, 39, 1) 100%);
+    top: 20px;
+    padding: 40px 30px;
+    width: 1536px;
+    height: 100vh;
+    /* overflow-x: hidden; */
+}
+.shirt-element {
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid white; */
+}
+
+.textHeadColorShirt {
+    position: relative;
+    top: -40px;
+    left: 350px;
+    scale: 80%;
+    width: 80%;
+    height: auto;
+}
+.mu-star {
+    position: absolute;
+    /* border: 1px solid white; */
+    width: fit-content;
+    top: -50px;
+    left: -30px;
+}
+.shirt-box-layout {
+    position: relative;
+    z-index: 3;
+}
+
+.sizeBox {
+    scale: 90%;
+}
+
+.first-line {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    top: -120px;
+}
+
+.second-line {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    top: -325px;
+}
+
+.satShirt {
+    position: relative;
+    top: 175px;
+}

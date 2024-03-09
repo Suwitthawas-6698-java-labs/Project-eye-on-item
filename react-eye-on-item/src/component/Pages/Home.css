@@ -1,0 +1,117 @@
+.bg {
+    background-image: url("../Asset/BackgroundHomepage.svg");
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Use viewport height to make it responsive */ /* Enable scrolling if content exceeds the viewport */
+}
+
+.intro {
+    position: relative;
+    top: 110px;
+    left: 20px;
+    padding: 40px 30px;
+}
+
+.intro h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #B2442B;
+}
+
+.text-transparent-bg {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #B2442B;
+}
+
+.text-writer{
+    font-size: 30px;
+}
+
+.info {
+    margin: 35px 0px;
+}
+
+.info span{
+    color: transparent;
+    -webkit-text-stroke: #B2442B 2px;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: #B2442B;
+}
+
+.info-border {
+    border-radius: 80px;
+    border: #B2442B 2px solid;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.info-border img {
+    position: relative;
+    z-index: 1;
+    bottom: 10px;
+}
+
+.text-info {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.text-info h2 {
+    font-size: 35px;
+    color: #B2442B;
+}
+
+.text-info a {
+    font-size: 20px;
+    color: #B2442B;
+}
+
+.info-singleLayout button{
+    width: 194px;
+    height: 67px;
+    border-radius: 26px;
+    font-size: 25px;
+    background-color: #FFE9E4;
+    color: #B2442B;
+    border: #B2442B 2px solid;
+    transition: 0.25s ease-in-out;
+}
+
+.info-singleLayout button:hover {
+    background-color: #B2442B;
+    color: white;
+    cursor: pointer;
+}
+
+.info-singleLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-layout {
+    padding: 40px 0;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+footer {
+    width: 100vw;
+    height: 250px;
+    background-color: #B2442B;
+    padding: 20px 50px;
+}

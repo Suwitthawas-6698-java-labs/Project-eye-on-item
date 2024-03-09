@@ -1,0 +1,205 @@
+.bg-PreventElectronic {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+     /* Use viewport height to make it responsive */ /* Enable scrolling if content exceeds the viewport */
+}
+
+.Electronic-main {
+    position: relative;
+    top: 80px;
+    left: 20px;
+}
+
+ion-icon {
+    font-size: 64px;
+    color: gray;
+    padding-top: 20px;
+    transition: 0.25s ease-in-out;
+}
+
+ion-icon:hover {
+    color: white;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 20px 30px;
+}
+
+.label a {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.flexlayout {
+    display: flex;
+    justify-content: center;
+}
+
+.slide1, .slide2, .slide3, .slide4 {
+    display: flex;
+    align-items: center;
+    width: 1236px;
+}
+
+.slideImg {
+    margin: 0 50px;
+    max-width: 500px;
+    height: 400px;
+}
+
+.text-info-element {
+    padding: 30px 55px;
+    border-radius: 97px;
+    background-image: linear-gradient(white,black);
+    width: 600px;
+    height: 400px;
+}
+
+.text h1, .text2 h1 {
+    font-size: 30px;
+}
+
+.text a, .text2 a {
+    font-size: 20px;
+}
+
+.text2 {
+    color: white;
+    margin-top: 30px;
+}
+
+.apple-os, .android-os {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 34px;
+    opacity: 78%;
+    width: 350px;
+    height: 70px;
+}
+
+.os-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    box-shadow: 5px 3px 5px rgb(72, 72, 72);
+}
+
+.apple-os a, .android-os a {
+    font-weight: lighter;
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.25s ease-in-out;
+}
+
+.apple-os a:hover, .android-os a:hover {
+    color: #666666;
+    font-size: 130%;
+    font-weight: bolder;
+}
+
+.os-element {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.apple {
+    max-width: 34px;
+    height: 39px;
+}
+
+.android {
+    max-width: 35px;
+    height: 41px;
+}
+
+.findMy {
+    max-width: 54px;
+    height: 52px;
+}
+
+.findMyDevice {
+    max-width: 41px;
+    height: 41px;
+}
+
+.fi-br-arrow-up-right-from-square {
+    padding: 0 5px;
+}
+
+/* custom next previous arrow */
+.NextArrow, .PrevArrow {
+    z-index: 3;
+    position: fixed;
+    bottom: 30px;
+    border-radius: 50%;
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.NextArrow:hover, .PrevArrow:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.NextArrow {
+    right: 350px;
+}
+
+.PrevArrow {
+    left: 350px;
+}
+
+.carousel {
+    height: 480px;
+    position: relative;
+    z-index: 2; /* Set your desired height */
+  }
+
+/* custom indicator */
+.indicator {
+    position: relative;
+    bottom: 0;
+    left: -40px;
+    z-index: 3;
+    display: inline-block;
+    width: 40px;
+    height: 8px;
+    margin: 0 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .indicator.selected {
+    background-color: rgb(255, 255, 255); /* Color when selected */
+  }
+  
+  .indicator:not(.selected) {
+    background-color: rgb(97, 97, 97);
+    width: 20px;
+  }
+
+
+

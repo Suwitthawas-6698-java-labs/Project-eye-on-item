@@ -1,0 +1,60 @@
+/* custom next previous arrow */
+.NextArrow, .PrevArrow {
+    z-index: 3;
+    position: fixed;
+    bottom: 30px;
+    border-radius: 50%;
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.NextArrow:hover, .PrevArrow:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.NextArrow {
+    right: 350px;
+}
+
+.PrevArrow {
+    left: 350px;
+}
+
+.carousel {
+    height: 480px;
+    position: relative;
+    z-index: 2; /* Set your desired height */
+  }
+
+/* custom indicator */
+.indicator {
+    position: relative;
+    bottom: 0;
+    left: -40px;
+    z-index: 3;
+    display: inline-block;
+    width: 40px;
+    height: 8px;
+    margin: 0 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .indicator.selected {
+    background-color: rgb(255, 255, 255); /* Color when selected */
+  }
+  
+  .indicator:not(.selected) {
+    background-color: rgb(97, 97, 97);
+    width: 20px;
+  }

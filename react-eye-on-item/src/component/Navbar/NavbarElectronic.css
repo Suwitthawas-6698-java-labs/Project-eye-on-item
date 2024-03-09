@@ -1,0 +1,107 @@
+.navbar-preventElectronic {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.laptop-icon, .watch-icon, .phone-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: white 1px solid;
+    background-color: transparent;
+    font-size: 22px;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar-preventElectronic a {
+    text-decoration: none;
+}
+
+.fi-rs-laptop, .fi-tr-watch-smart {
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    transition: 0.25s ease-in-out;
+}
+
+.fi-tr-mobile-button {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.fi-rs-laptop:hover, .fi-tr-watch-smart:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+  
+.nav-Laptop {
+    .fi-tr-mobile-button, .fi-tr-watch-smart {
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+        background-color: transparent;
+        transition: 0.25s ease-in-out;
+    }
+    
+    .fi-rs-laptop {
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+    }
+    
+    .fi-tr-mobile-button:hover, .fi-tr-watch-smart:hover {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.nav-Watch {
+    .fi-tr-mobile-button, .fi-rs-laptop {
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+        background-color: transparent;
+        transition: 0.25s ease-in-out;
+    }
+    
+    .fi-tr-watch-smart {
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+    }
+    
+    .fi-tr-mobile-button:hover, .fi-rs-laptop:hover {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+}
