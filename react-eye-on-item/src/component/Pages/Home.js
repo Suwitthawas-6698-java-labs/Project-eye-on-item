@@ -5,8 +5,11 @@ import nervous from '../Asset/nervous.svg';
 import bhuddalucky from '../Asset/bhuddalucky.svg';
 import ipad from '../Asset/ipad.svg';
 import { Link } from 'react-router-dom';
+import { useHref } from 'react-router-dom';
 
 const Home = () => {
+  const hrefToHowto = useHref('/Howto'),
+        hrefToMuteloo = useHref('/Mu-Te-Loo')
   return (
     <div className='Home'>
       <div className='bg'>
@@ -33,7 +36,7 @@ const Home = () => {
               </div>
               <img src={nervous} alt="nervous" />
             </div>
-            <Link to={'/Howto'}><button>ทำไงดี</button></Link>
+            <button onClick={() => window.open(hrefToHowto, '_blank')}>ทำไงดี</button>
           </div>
 
           <div className='info-singleLayout'>
@@ -44,7 +47,7 @@ const Home = () => {
               </div>
               <img src={bhuddalucky} alt="bhuddaluck" />
             </div>
-            <Link to={'/Mu-Te-Loo'}><button >มูเตลู</button></Link>
+            <button onClick={() => window.open(hrefToMuteloo, '_blank')}>มูเตลู</button>
           </div>
 
           <div className='info-singleLayout'>

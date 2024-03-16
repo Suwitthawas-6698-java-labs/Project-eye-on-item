@@ -1,12 +1,4 @@
-.intro-page {
-    position: relative;
-    top: 110px;
-    left: 20px;
-    padding: 40px 30px;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css');
 
 .text-intro h1 {
     color: #B2442B;
@@ -15,21 +7,22 @@
     font-weight: 600;
     line-height: normal;
     position: relative;
-    left: 30px;
+    left: 65px;
+    top: 110px;
 }
 
 .text-intro a {
     font-size: 20px;
     position: absolute;
     left: 65px;
-    top: 200px;
+    top: 300px;
     /* white-space: pre; */
 }
 
 .text-intro aside {
     position: absolute;
-    left: 870px;
-    top: 50px;
+    left: 900px;
+    top: 150px;
 }
 
 .publicplace span {
@@ -45,8 +38,8 @@
     font-weight: 600;
     line-height: normal;
     position: relative;
-    left: 130px;
-    top: 65px;
+    left: 120px;
+    top: 22px;
 }
 
 .publicplace h2 {
@@ -56,8 +49,8 @@
     font-weight: 600;
     line-height: normal;
     position: relative;
-    left: 130px;
-    top: 145px;
+    left: 120px;
+    top: 100px;
 }
 
 .publicplace h3 {
@@ -67,22 +60,21 @@
     font-weight: 600;
     line-height: normal;
     position: relative;
-    left: 130px;
-    top: -14px;
+    left: 120px;
+    top: -55px;
 }
 
 .publicplace {
-    background-image: url("../Asset/bg-publicplace3.svg");
+    background-image : url("../Asset/bg-publicplace3.svg");
     background-size: cover; /* Adjust the background size as needed */
-    background-position: top left;
-    background-repeat: no-repeat;
-    width: 100vw;
+    background-position: center;
+    width: 1536px;
     height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .publicplace1 {
-    background-image: url("../Asset/bg-howto-public.svg");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: center;
     width: 1536px;
@@ -92,107 +84,46 @@
 
 .publicplace1 h1 {
     display: block;
-    color: #B2442B;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 245px;
-    top: 180px;
-    border: 4px solid #B2442B;
-    padding: 6px;
+    left: 800px;
+    top: 175px;
+    padding: 10px;
     width: 295px;
-    text-align: right;
-    background-color: #ecf0f1;
-    border-radius: 20px; /* ขอบมน */
-}
-
-.publicplace1 h2 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 200px;
-    top: 100px;
-    padding: 2px;
-    width: 100px;
     text-align: center;
-    background-color: #B2442B;
-    border-radius: 50%;
-    z-index: 2;
+    background-color: #f9f9f9;
+    border-radius: 41px; /* ขอบมน */
+    z-index: 1;
 }
 
 .publicplace1 a {
     display: block;
     color: #000000;
-    font-size: 22px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     position: relative;
-    left: 170px;
-    top: 80px;
-    border: 4px solid #B2442B;
-    padding: 25px;
-    width: 580px;
-    background-color: #ecf0f1;
-    border-radius: 36px; /* ขอบมน */
-}
-
-.publicplace1 aside {
-    position: relative;
-    left: 470px;
-    top: 343px;
+    left: 800px;
+    top: 100px;
+    padding: 80px;
+    width: 550px;
+    background-color: #d8d8d8;
+    border-radius: 50px; /* ขอบมน */
 }
 
 .publicplace1 aside2 {
     position: relative;
-    left: 1000px;
+    left: 300px;
     top: -350px;
 }
 
-.publicplace1 aside3 {
-    position: relative;
-    left: 30px;
-    top: -255px;
-}
-
-.publicplace1 aside4 {
-    position: relative;
-    left: 40px;
-    top: -253px;
-}
-
-.publicplace1 aside5 {
-    position: relative;
-    left: 50px;
-    top: -258px;
-}
-
-.publicplace1 aside6 {
-    position: relative;
-    left: 60px;
-    top: -253px;
-}
-
-.publicplace1 aside7 {
-    position: relative;
-    left: 70px;
-    top: -253px;
-}
-
-.publicplace1 aside8 {
-    position: relative;
-    left: 80px;
-    top: -253px;
-}
-
 .publicplace2 {
-    background-image: url("../Asset/bg-howto-public-relation.svg");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -203,109 +134,46 @@
 
 .publicplace2 h1 {
     display: block;
-    color: #b94e36;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 880px;
-    top: 235px;
-    border: 4px solid #B2442B;
+    left: 890px;
+    top: 222px;
     padding: 8px;
     width: 345px;
     text-align: center;
     background-color: #ffffff;
-    border-radius: 20px; /* ขอบมน */
+    border-radius: 41px; /* ขอบมน */
     z-index: 1;
-}
-
-.publicplace2 h2 {
-    display: inline-block;
-    color: #B2442B;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 820px;
-    top: 150px;
-    padding: 2px;
-    width: 100px;
-    text-align: center;
-    border: 2px solid #B2442B;
-    background-color: #ffffff;
-    border-radius: 50%;
-    z-index: 2;
 }
 
 .publicplace2 a {
     display: block;
     color: #000000;
-    font-size: 22px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     position: relative;
-    left: 850px;
-    top: 110px;
-    border: 4px solid #B2442B;
-    padding: 30px;
+    left: 890px;
+    top: 150px;
+    padding: 70px;
     width: 550px;
-    background-color: #ffffff;
+    background-color: #d8d8d8;
     border-radius: 36px; /* ขอบมน */
 }
 
 .publicplace2 aside {
     position: relative;
-    left: 10px;
-    top: -325px;
-}
-
-.publicplace2 aside2 {
-    position: relative;
-    left: 500px;
-    top: -253px;
-}
-
-.publicplace2 aside3 {
-    position: relative;
-    left: 510px;
-    top: -253px;
-}
-
-.publicplace2 aside4 {
-    position: relative;
-    left: 520px;
-    top: -253px;
-}
-
-.publicplace2 aside5 {
-    position: relative;
-    left: 530px;
-    top: -258px;
-}
-
-.publicplace2 aside6 {
-    position: relative;
-    left: 540px;
-    top: -253px;
-}
-
-.publicplace2 aside7 {
-    position: relative;
-    left: 550px;
-    top: -253px;
-}
-
-.publicplace2 aside8 {
-    position: relative;
-    left: 560px;
-    top: -253px;
+    left: 190px;
+    top: -300px;
 }
 
 .publicplace3 {
-    background-image: url("../Asset/bg-howto-public-try.svg");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -316,39 +184,20 @@
 
 .publicplace3 h1 {
     display: block;
-    color: #B2442B;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 175px;
-    top: 170px;
-    border: 4px solid #B2442B;
+    left: 900px;
+    top: 165px;
     padding: 5px;
     width: 270px;
     text-align: center;
-    background-color: #ecf0f1;
-    border-radius: 20px; /* ขอบมน */
+    background-color: #ffffff;
+    border-radius: 41px; /* ขอบมน */
     z-index: 1;
-}
-
-.publicplace3 h2 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 130px;
-    top: 95px;
-    padding: 2px;
-    width: 100px;
-    text-align: center;
-    background-color: #B2442B;
-    border-radius: 50%;
-    z-index: 2;
 }
 
 .publicplace3 a {
@@ -359,65 +208,22 @@
     font-weight: 300;
     line-height: normal;
     position: relative;
-    left: 170px;
-    top: 70px;
-    border: 4px solid #B2442B;
-    padding: 30px;
-    width: 530px;
-    background-color: #ecf0f1;
-    border-radius: 36px; /* ขอบมน */
+    left: 900px;
+    top: 100px;
+    padding: 70px;
+    width: 550px;
+    background-color: #d8d8d8;
+    border-radius: 41px; /* ขอบมน */
 }
 
 .publicplace3 aside {
     position: relative;
-    left: 850px;
-    top: -370px;
-}
-
-.publicplace3 aside2 {
-    position: relative;
-    left: 530px;
-    top: -260px;
-}
-
-.publicplace3 aside3 {
-    position: relative;
-    left: 540px;
-    top: -260px;
-}
-
-.publicplace3 aside4 {
-    position: relative;
-    left: 550px;
-    top: -260px;
-}
-
-.publicplace3 aside5 {
-    position: relative;
-    left: 560px;
-    top: -265px;
-}
-
-.publicplace3 aside6 {
-    position: relative;
-    left: 570px;
-    top: -260px;
-}
-
-.publicplace3 aside7 {
-    position: relative;
-    left: 580px;
-    top: -260px;
-}
-
-.publicplace3 aside8 {
-    position: relative;
-    left: 590px;
-    top: -260px;
+    left: 240px;
+    top: -320px;
 }
 
 .publicplace4 {
-    background-image: url("../Asset/bg-howto-public-important.png");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -428,40 +234,20 @@
 
 .publicplace4 h1 {
     display: block;
-    color: #b94e36;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
     left: 920px;
-    top: 220px;
-    border: 4px solid #B2442B;
+    top: 195px;
     padding: 5px;
-    width: 300px;
+    width: 270px;
     text-align: center;
     background-color: #ffffff;
-    border-radius: 20px; /* ขอบมน */
+    border-radius: 41px; /* ขอบมน */
     z-index: 1;
-}
-
-.publicplace4 h2 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 890px;
-    top: 145px;
-    padding: 2px;
-    width: 100px;
-    text-align: center;
-    border: 2px solid #B2442B;
-    background-color: #B2442B;
-    border-radius: 50%;
-    z-index: 2;
 }
 
 .publicplace4 a {
@@ -472,65 +258,22 @@
     font-weight: 300;
     line-height: normal;
     position: relative;
-    left: 930px;
-    top: 115px;
-    border: 4px solid #B2442B;
-    padding: 30px;
+    left: 920px;
+    top: 130px;
+    padding: 70px;
     width: 550px;
-    background-color: #ffffff;
-    border-radius: 36px; /* ขอบมน */
+    background-color: #d8d8d8;
+    border-radius: 41px; /* ขอบมน */
 }
 
 .publicplace4 aside {
     position: relative;
-    left: 0px;
-    top: -270px;
-}
-
-.publicplace4 aside2 {
-    position: relative;
-    left: 520px;
-    top: -265px;
-}
-
-.publicplace4 aside3 {
-    position: relative;
-    left: 530px;
-    top: -265px;
-}
-
-.publicplace4 aside4 {
-    position: relative;
-    left: 540px;
-    top: -265px;
-}
-
-.publicplace4 aside5 {
-    position: relative;
-    left: 550px;
-    top: -270px;
-}
-
-.publicplace4 aside6 {
-    position: relative;
-    left: 560px;
-    top: -265px;
-}
-
-.publicplace4 aside7 {
-    position: relative;
-    left: 570px;
-    top: -265px;
-}
-
-.publicplace4 aside8 {
-    position: relative;
-    left: 580px;
-    top: -265px;
+    left: 200px;
+    top: -300px;
 }
 
 .publicplace5 {
-    background-image: url("../Asset/bg-howto-public-social.png");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -541,39 +284,20 @@
 
 .publicplace5 h1 {
     display: block;
-    color: #B2442B;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 175px;
-    top: 170px;
-    border: 4px solid #B2442B;
+    left: 850px;
+    top: 132px;
     padding: 5px;
     width: 300px;
     text-align: center;
-    background-color: #ecf0f1;
-    border-radius: 20px; /* ขอบมน */
+    background-color: #ffffff;
+    border-radius: 41px; /* ขอบมน */
     z-index: 1;
-}
-
-.publicplace5 h2 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 130px;
-    top: 95px;
-    padding: 2px;
-    width: 100px;
-    text-align: center;
-    background-color: #B2442B;
-    border-radius: 50%;
-    z-index: 2;
 }
 
 .publicplace5 a {
@@ -584,65 +308,22 @@
     font-weight: 300;
     line-height: normal;
     position: relative;
-    left: 180px;
+    left: 850px;
     top: 67px;
-    border: 4px solid #B2442B;
-    padding: 30px;
-    width: 530px;
-    background-color: #ecf0f1;
-    border-radius: 36px; /* ขอบมน */
+    padding: 70px;
+    width: 550px;
+    background-color: #d8d8d8;
+    border-radius: 41px; /* ขอบมน */
 }
 
 .publicplace5 aside {
     position: relative;
-    left: 950px;
-    top: -275px;
-}
-
-.publicplace5 aside2 {
-    position: relative;
-    left: 520px;
-    top: -160px;
-}
-
-.publicplace5 aside3 {
-    position: relative;
-    left: 530px;
-    top: -160px;
-}
-
-.publicplace5 aside4 {
-    position: relative;
-    left: 540px;
-    top: -160px;
-}
-
-.publicplace5 aside5 {
-    position: relative;
-    left: 550px;
-    top: -163px;
-}
-
-.publicplace5 aside6 {
-    position: relative;
-    left: 560px;
-    top: -160px;
-}
-
-.publicplace5 aside7 {
-    position: relative;
-    left: 570px;
-    top: -160px;
-}
-
-.publicplace5 aside8 {
-    position: relative;
-    left: 580px;
-    top: -160px;
+    left: 300px;
+    top: -300px;
 }
 
 .publicplace6 {
-    background-image: url("../Asset/bg-howto-public-software.png");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -653,40 +334,20 @@
 
 .publicplace6 h1 {
     display: block;
-    color: #b94e36;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 875px;
-    top: 225px;
-    border: 4px solid #B2442B;
+    left: 860px;
+    top: 186px;
     padding: 5px;
     width: 310px;
     text-align: center;
     background-color: #ffffff;
-    border-radius: 20px; /* ขอบมน */
+    border-radius: 41px; /* ขอบมน */
     z-index: 1;
-}
-
-.publicplace6 h2 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 830px;
-    top: 140px;
-    padding: 2px;
-    width: 100px;
-    text-align: center;
-    border: 2px solid #B2442B;
-    background-color: #B2442B;
-    border-radius: 50%;
-    z-index: 2;
 }
 
 .publicplace6 a {
@@ -699,63 +360,20 @@
     position: relative;
     left: 860px;
     top: 120px;
-    border: 4px solid #B2442B;
-    padding: 30px;
+    padding: 70px;
     width: 550px;
-    background-color: #ffffff;
-    border-radius: 36px; /* ขอบมน */
+    background-color: #d8d8d8;
+    border-radius: 41px; /* ขอบมน */
 }
 
 .publicplace6 aside {
     position: relative;
-    left: 50px;
-    top: -260px;
-}
-
-.publicplace6 aside2 {
-    position: relative;
-    left: 520px;
-    top: -140px;
-}
-
-.publicplace6 aside3 {
-    position: relative;
-    left: 530px;
-    top: -140px;
-}
-
-.publicplace6 aside4 {
-    position: relative;
-    left: 540px;
-    top: -140px;
-}
-
-.publicplace6 aside5 {
-    position: relative;
-    left: 550px;
-    top: -145px;
-}
-
-.publicplace6 aside6 {
-    position: relative;
-    left: 560px;
-    top: -140px;
-}
-
-.publicplace6 aside7 {
-    position: relative;
-    left: 570px;
-    top: -140px;
-}
-
-.publicplace6 aside8 {
-    position: relative;
-    left: 580px;
-    top: -140px;
+    left: 200px;
+    top: -240px;
 }
 
 .publicplace7 {
-    background-image: url("../Asset/bg-howto-public-ask.png");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -766,39 +384,20 @@
 
 .publicplace7 h1 {
     display: block;
-    color: #B2442B;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 175px;
-    top: 178px;
-    border: 4px solid #B2442B;
+    left: 900px;
+    top: 190px;
     padding: 7px;
     width: 300px;
     text-align: center;
-    background-color: #ecf0f1;
-    border-radius: 20px; /* ขอบมน */
+    background-color: #ffffff;
+    border-radius: 41px; /* ขอบมน */
     z-index: 1;
-}
-
-.publicplace7 h2 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 130px;
-    top: 95px;
-    padding: 2px;
-    width: 100px;
-    text-align: center;
-    background-color: #B2442B;
-    border-radius: 50%;
-    z-index: 2;
 }
 
 .publicplace7 a {
@@ -809,61 +408,18 @@
     font-weight: 300;
     line-height: normal;
     position: relative;
-    left: 180px;
-    top: 60px;
-    border: 4px solid #B2442B;
-    padding: 30px;
-    width: 530px;
-    background-color: #ecf0f1;
-    border-radius: 36px; /* ขอบมน */
+    left: 900px;
+    top: 120px;
+    padding: 70px;
+    width: 550px;
+    background-color: #d8d8d8;
+    border-radius: 41px; /* ขอบมน */
 }
 
 .publicplace7 aside {
     position: relative;
-    left: 950px;
+    left: 250px;
     top: -250px;
-}
-
-.publicplace7 aside2 {
-    position: relative;
-    left: 520px;
-    top: -155px;
-}
-
-.publicplace7 aside3 {
-    position: relative;
-    left: 530px;
-    top: -155px;
-}
-
-.publicplace7 aside4 {
-    position: relative;
-    left: 540px;
-    top: -155px;
-}
-
-.publicplace7 aside5 {
-    position: relative;
-    left: 550px;
-    top: -158px;
-}
-
-.publicplace7 aside6 {
-    position: relative;
-    left: 560px;
-    top: -155px;
-}
-
-.publicplace7 aside7 {
-    position: relative;
-    left: 570px;
-    top: -155px;
-}
-
-.publicplace7 aside8 {
-    position: relative;
-    left: 580px;
-    top: -155px;
 }
 
 .privateplace span {
@@ -918,7 +474,7 @@
 }
 
 .privateplace1 {
-    background-image: url("../Asset/bg-private-calm.svg");
+    background-color: black;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -935,57 +491,40 @@
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 195px;
-    top: 40px;
-    border: 4px solid #B2442B;
+    left: 890px;
+    top: 218px;
     padding: 7px;
-    width: 500px;
+    width: 470px;
     text-align: center;
-    background-color: #ecf0f1;
-    border-radius: 20px; /* ขอบมน */
+    background-color: #ffff;
+    border-radius: 41px; /* ขอบมน */
     z-index: 1;
-}
-
-.privateplace1 h2 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 138px;
-    top: -50px;
-    padding: 2px;
-    width: 100px;
-    text-align: center;
-    background-color: #B2442B;
-    border-radius: 50%;
-    z-index: 2;
 }
 
 .privateplace1 a {
     display: block;
-    color: #ffffff;
+    color: #000000;
+    background-color: #d8d8d8;
     font-size: 25px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     position: relative;
-    left: 135px;
-    top: -55px;
-    padding: 30px;
-    width: 1300px;
+    left: 890px;
+    top: 150px;
+    padding: 70px;
+    width: 560px;
+    border-radius: 41px; /* ขอบมน */
 }
 
 .privateplace1 aside {
     position: relative;
-    left: 500px;
-    top: -70px;
+    left: 250px;
+    top: -250px;
 }
 
 .privateplace2 {
-    background-image: url("../Asset/bg-private-lastactive.svg");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -1002,67 +541,90 @@
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 195px;
-    top: 40px;
-    border: 4px solid #B2442B;
-    padding: 7px;
-    width: 800px;
+    left: 850px;
+    top: 185px;
+    padding: 6px;
+    width: 470px;
     text-align: center;
-    background-color: #ecf0f1;
-    border-radius: 20px; /* ขอบมน */
+    background-color: #ffffff;
+    border-radius: 41px; /* ขอบมน */
     z-index: 1;
-}
-
-.privateplace2 h2 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: relative;
-    left: 138px;
-    top: -50px;
-    padding: 2px;
-    width: 100px;
-    text-align: center;
-    background-color: #B2442B;
-    border-radius: 50%;
-    z-index: 2;
 }
 
 .privateplace2 a {
     display: block;
-    color: #ffffff;
+    color: #000000;
+    background-color: #d8d8d8;
     font-size: 25px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     position: relative;
-    left: 135px;
-    top: -55px;
-    padding: 30px;
-    width: 1300px;
+    left: 850px;
+    top: 118px;
+    padding: 70px;
+    width: 550px;
+    border-radius: 41px; /* ขอบมน */
 }
 
 .privateplace2 aside {
     position: relative;
-    left: 500px;
-    top: -70px;
+    left: 300px;
+    top: -250px;
 }
 
 .privateplace3 {
-    background-image: url("../Asset/bg-private-space.svg");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
     width: 1536px;
     height: 100vh;
     overflow: hidden; 
+}
+
+.privateplace3 h1 {
+    display: block;
+    color: #000000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 870px;
+    top: 169px;
+    padding: 7px;
+    width: 500px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 41px; /* ขอบมน */
+    z-index: 1;
+}
+
+.privateplace3 a {
+    display: block;
+    color: #000000;
+    background-color: #d8d8d8;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    left: 870px;
+    top: 100px;
+    padding: 70px;
+    width: 550px;
+    border-radius: 41px; /* ขอบมน */
+}
+
+.privateplace3 aside {
+    position: relative;
+    left: 300px;
+    top: -270px;
 }
 
 .privateplace4 {
-    background-image: url("../Asset/bg-private-blanket.svg");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
@@ -1071,12 +633,92 @@
     overflow: hidden; 
 }
 
+.privateplace4 h1 {
+    display: block;
+    color: #000000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 870px;
+    top: 199px;
+    padding: 7px;
+    width: 450px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 41px; /* ขอบมน */
+    z-index: 1;
+}
+
+.privateplace4 a {
+    display: block;
+    color: #000000;
+    background-color: #d8d8d8;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    left: 870px;
+    top: 130px;
+    padding: 70px;
+    width: 550px;
+    border-radius: 41px; /* ขอบมน */
+}
+
+.privateplace4 aside {
+    position: relative;
+    left: 300px;
+    top: -240px;
+}
+
 .privateplace5 {
-    background-image: url("../Asset/bg-private-useitoften.svg");
+    background-color: #000000;
     background-size: cover; /* Adjust the background size as needed */
     background-position: top left;
     background-repeat: no-repeat;
     width: 1536px;
     height: 100vh;
     overflow: hidden; 
+}
+
+.privateplace5 h1 {
+    display: block;
+    color: #000000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 890px;
+    top: 249px;
+    padding: 7px;
+    width: 400px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 41px; /* ขอบมน */
+    z-index: 1;
+}
+
+.privateplace5 a {
+    display: block;
+    color: #000000;
+    background-color: #d8d8d8;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    left: 890px;
+    top: 180px;
+    padding: 70px;
+    width: 550px;
+    border-radius: 41px; /* ขอบมน */
+}
+
+.privateplace5 aside {
+    position: relative;
+    left: 300px;
+    top: -155px;
 }

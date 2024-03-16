@@ -1,0 +1,130 @@
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+}
+
+ul2 {
+  list-style: none;
+  top: 130px;
+}
+
+main {
+  margin-inline: 6rem 1rem;
+  padding-block: 2rem;
+}
+
+/*Slide bar*/
+.nav2 {
+  width: 20px;
+  height: max-content;
+  position: fixed;
+  inset: 0;
+  margin: auto 0;
+}
+
+.nav__list{
+  position: absolute;
+  background-color: white;
+  padding-block: 40px;
+  width: 65px;
+  border-radius: 0 51px 51px 0;
+  display: grid;
+  justify-content: right;
+  row-gap: 1rem;
+}
+
+a.nav__link{
+  position: relative;
+  top: auto;
+  left: 95px;
+  width: 140px;
+  display: inline-flex;
+  padding: 2px 0px;
+  border-radius: 50%;
+  transition: .4s;
+  background-color: transparent;
+}
+
+a.nav__link i{
+  font-size: 1.5rem;
+  color: gray;
+  transition: color .4s;
+}
+
+.nav__name{
+  position: absolute;
+  top: 0;
+  transform: translateX(56px);
+  background-color: whitesmoke;
+  color: var(--white-color);
+  font-size: 15px;
+  padding: 6px 10px;
+  border-radius: 3rem;
+  pointer-events: none;
+  transition: transform .5s, opacity .5s;
+  opacity: 0;
+}
+
+.nav__link:hover .nav__name{
+  opacity: 1;
+  transform: translateX(48px);
+}
+
+/*Shapes*/
+.nav__circle-1,
+.nav__circle-2{
+  width: 80px;
+  height: 80px;
+  background-color:black;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+}
+
+.nav__circle-1{
+  top: 55px;
+}
+
+.nav__circle-2{
+  bottom: -678px;
+}
+
+.nav__square-1,
+.nav__square-2{
+  width: 35px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.nav__square-1{
+  top: 100px;
+}
+
+.nav__square-2{
+  bottom: -640px;
+}
+
+.active-link{
+  background-color: var(--white-color);
+}
+
+.active-link i{
+  color: var(--first-color);
+}
