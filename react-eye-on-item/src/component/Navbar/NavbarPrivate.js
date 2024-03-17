@@ -3,14 +3,9 @@ import './NavbarPrivate.css';
 import { Link, animateScroll as scroll} from 'react-scroll';
 
 const NavbarPrivate = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsActive(!isActive);
-  };
 
   return (
-    <nav1 className={`nav1 ${isActive ? 'active' : ''}`} onClick={toggleNavbar}>
+    <nav1 className="nav1">
       <ul1 className="nav__list1">
       <Link to="privatePlace1"  className="nav__link1" spy={true} smooth={true}>
         <i className="fi fi-ss-massage"></i>

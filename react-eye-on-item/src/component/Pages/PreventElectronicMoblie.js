@@ -11,6 +11,9 @@ import android from '../Asset/android.svg';
 import findMyDevice from '../Asset/findMyDevice.svg';
 import phoneCase from '../Asset/phoneCase.svg';
 import { Link } from 'react-router-dom';
+import casetify from '../Asset/casetify.png';
+import degree425 from '../Asset/425degree.png';
+import luken from '../Asset/Luken.png';
 
 
 function PreventElectronicMoblie() {
@@ -91,6 +94,29 @@ function PreventElectronicMoblie() {
                 <div className='text'>
                   <h1>เคสโทรศัพท์ที่มีสายห้อย</h1>
                   <a>เพื่อป้องกันการวางโทรศัพท์ไว้ที่ใดที่หนึ่งแล้วลืม และสามารถป้องกันการถูกขโมยจากบุคคลได้อีกด้วย</a>
+                </div>
+                <div className='caseShop'>
+                    <div className='caseElement'>
+                      <div className='caseElement-info'>
+                          <img src={casetify} alt='casetify' className='casetify'/>
+                          <a>Casetify</a>
+                      </div>
+                      <a href='https://www.casetify.com/th_TH/gadgets/phone-strap-with-card?DG=Accessories&D_Accessories=Phone+Strap+with+Card'><button>Buy</button></a>
+                    </div>
+                    <div className='caseElement'>
+                      <div className='caseElement-info'>
+                          <img src={degree425} alt='case425degree'/>
+                          <a>425 Degree</a>
+                      </div>
+                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>Buy</button></a>
+                    </div>
+                    <div className='caseElement'>
+                      <div className='caseElement-info'>
+                          <img src={luken} alt='lukenCase'/>
+                          <a>Luken</a>
+                      </div>
+                      <button>Buy</button>
+                    </div>
                 </div>
               </div>
             </div>

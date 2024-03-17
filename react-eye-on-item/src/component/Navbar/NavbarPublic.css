@@ -30,7 +30,6 @@ main {
 .nav2 {
   width: 20px;
   height: max-content;
-  position: fixed;
   inset: 0;
   margin: auto 0;
 }

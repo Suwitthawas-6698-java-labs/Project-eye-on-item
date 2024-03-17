@@ -115,21 +115,25 @@ function Howto() {
         <aside><img src={calmpv} alt="calmpv" /></aside>
       </div>
       <div className='privateplace2' id='privatePlace2'>
+        <NavbarPrivate/>
         <h1>ใช้ล่าสุดตรงไหน ไปดูตรงนั้น</h1>
         <a>ดูบริเวณบนที่วางไว้หรือ อาจจะหล่น ของที่หายอาจจะอยู่ในที่ที่เราคาดไม่ถึง เช่น หากใช้งานล่าสุดอยู่บนโต๊ะอ่านหนังสือ ของชิ้นนั้นอาจจะอยู่บนโต๊ะอ่านหนังสือโต๊ะนั้น แต่โดนกองหนังสือทับไว้อยู่ก็เป็นได้</a>
         <aside><img src={lastactive} alt="lastactive" /></aside>
       </div>
       <div className='privateplace3' id='privatePlace3'>
+        <NavbarPrivate/>
         <h1>บริเวณช่องว่างระหว่างที่นอน</h1>
         <a>ที่ที่มีช่องว่างมักจะเป็นที่ดึงดูดของสิ่งของที่เราต้องการใช้งานมากที่สุด บางครั้งเราอาจจะใช้งานอยู่ แต่พอรู้ตัวอีกทีก็หาไม่เจอแล้วซึ่งการหาตามที่ที่มีช่องว่างเล็กๆ อาจจะเป็นตัวเลือกที่ดี</a>
         <aside><img src={lastactive} alt="lastactive" /></aside>
       </div>
       <div className='privateplace4' id='privatePlace4'>
+        <NavbarPrivate/>
         <h1>ใต้ผ้าปูที่นอนหรือผ้าห่ม</h1>
         <a>สำหรับคนที่ชอบวางอะไรไว้บนที่นอน ทางเลือกนี้จะเป็นทางเลือกหนึ่งที่มีประโยชน์มากเราจะจำว่าเราวางอะไรบนที่นอนได้แค่ในตอนแรก แต่ถ้าผ่านไป 3-4 ชั่วโมงเราก็อาจจะลืมได้โดยที่เราไม่รู้ตัว</a>
         <aside><img src={lastactive} alt="lastactive" /></aside>
       </div>
       <div className='privateplace5' id='privatePlace5'>
+        <NavbarPrivate/>
         <h1>พื้นที่ใช้งานบ่อยๆ</h1>
         <a>เพราะพื้นที่ส่วนตัวของเรา เราอาจจะเข้าไปอยู่บ่อยที่สุดบางครั้งก็เผลอหยิบจับอะไรเข้าไปหรือวางทิ้งเอาไว้จนลืม</a>
         <aside><img src={lastactive} alt="lastactive" /></aside>

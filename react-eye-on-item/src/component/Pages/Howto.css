@@ -68,7 +68,7 @@
     background-image : url("../Asset/bg-publicplace3.svg");
     background-size: cover; /* Adjust the background size as needed */
     background-position: center;
-    width: 1536px;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -485,7 +485,7 @@
 
 .privateplace1 h1 {
     display: block;
-    color: #B2442B;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
@@ -535,7 +535,7 @@
 
 .privateplace2 h1 {
     display: block;
-    color: #B2442B;
+    color: #000000;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;

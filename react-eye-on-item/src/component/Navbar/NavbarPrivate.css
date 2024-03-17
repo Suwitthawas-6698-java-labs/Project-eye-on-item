@@ -28,10 +28,7 @@ main {
 .nav1 {
   width: 20px;
   height: max-content;
-  position: fixed;
-  inset: 0;
-  margin: auto 0;
-  top: -700px;
+  position: absolute;
 }
 
 .nav__list1{
