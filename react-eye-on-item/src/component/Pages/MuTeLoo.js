@@ -64,7 +64,6 @@ function MuTeLoo() {
         {/* Slot*/}
         <div className='slot-layout'>
           <SlotGame/>
-          <button>นี่คือปุ่ม</button>
         </div>
         {/* <div className='textInfo-slotPage'>
             <h1>วันนี้คุณเสี่ยงโชคแล้วหรือยัง</h1>

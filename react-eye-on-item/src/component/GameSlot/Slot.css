@@ -3,12 +3,20 @@
     --icon-height: 79px;
     --num-icons: 9;
 }
+.slot-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .side-slot {
     position: fixed;
     left: 0;
     top: 0;
     height: 100%; /* ปรับเป็น 100% */
     max-width: 100%; /* เพิ่ม max-width */
+    opacity: 0;
 }
 
 .slots {
@@ -19,6 +27,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    background-color: white;
 
     .reel {
         border: 1px solid black;
@@ -29,3 +38,54 @@
 		background-repeat: repeat-y;
     }  
 }
+
+@keyframes someWin {
+    0% { background: linear-gradient(45deg, orange 0%, yellow 100%); 
+    box-shadow: 0 0 80px orange }
+    100% { background: linear-gradient(45deg, grey 0%, lightgrey 100%); box-shadow: -2px 2px 3px rgba(black, 0.3); }
+}
+
+@keyframes allWin {
+    0% { background: linear-gradient(45deg, lightblue 0%, lightgreen 100%); 
+    box-shadow: 0 0 80px lightgreen }
+    100% { background: linear-gradient(45deg, grey 0%, lightgrey 100%); box-shadow: -2px 2px 3px rgba(black, 0.3); }
+}
+
+&.someWin {
+    animation: win1 200ms steps(2, end) infinite;
+}
+
+&.allWin {
+    animation: win2 200ms steps(2, end) infinite;
+}
+
+.slot-button-class{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgba(255, 52, 72, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out; /* เพิ่ม transition เมื่อ hover */
+}
+.slot-button-class:hover{
+    background-color: rgb(184, 16, 16)
+}
+.slot-button-class:active {
+    transform: translateY(2px);
+}
+
+/* .Swal-backdrop::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://drive.google.com/file/d/1Hxs16HryQj3sOPhZhMWQKxlwO9Oqa2Ol/view?usp=sharing') center center no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+  } */
