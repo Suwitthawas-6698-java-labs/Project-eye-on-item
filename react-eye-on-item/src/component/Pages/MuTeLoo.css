@@ -12,7 +12,7 @@
 .bg-intro-Mu {
     position: relative;
     /* overflow: hidden; */
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -82,10 +82,6 @@
     /* overflow: hidden; */
 }
 
-
-
-
-
 .textInfo-slotPage {
     display: flex;
     flex-direction: column;
@@ -124,6 +120,11 @@ a8 {
     text-align: center;
     /* let text อยู่ตรงกลาง*/
 
+}
+.slot-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* เว้นไว้สำหรับทำ element ใน slot page */
@@ -246,7 +247,7 @@ a8 {
     padding: 40px 30px;
     width: 1536px;
     height: 100vh;
-    /* overflow-x: hidden; */
+    overflow: hidden;
 }
 .shirt-element {
     position: relative;

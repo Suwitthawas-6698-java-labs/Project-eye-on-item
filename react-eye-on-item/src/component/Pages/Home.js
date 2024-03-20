@@ -9,7 +9,8 @@ import { useHref } from 'react-router-dom';
 
 const Home = () => {
   const hrefToHowto = useHref('/Howto'),
-        hrefToMuteloo = useHref('/Mu-Te-Loo')
+        hrefToMuteloo = useHref('/Mu-Te-Loo'),
+        hrefToPrevent  = useHref('/Prevent');
   return (
     <div className='Home'>
       <div className='bg'>
@@ -58,7 +59,7 @@ const Home = () => {
               </div>
               <img src={ipad} alt="nervous" />
             </div>
-            <Link to={'/Prevent'}><button>ดีกว่าแก้</button></Link>
+            <button onClick={() => window.open(hrefToPrevent, '_blank')}>ดีกว่าแก้</button>
           </div>
         </div>
       </div>

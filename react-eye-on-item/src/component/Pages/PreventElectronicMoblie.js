@@ -115,7 +115,7 @@ function PreventElectronicMoblie() {
                           <img src={luken} alt='lukenCase'/>
                           <a>Luken</a>
                       </div>
-                      <button>Buy</button>
+                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>Buy</button></a>
                     </div>
                 </div>
               </div>

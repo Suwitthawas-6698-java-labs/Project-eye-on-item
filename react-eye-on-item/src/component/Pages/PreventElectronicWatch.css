@@ -26,9 +26,17 @@
     margin: 10px 0;
 }
 
-.galaxyWatch span {
+.galaxyWatch .galaxy-wearable {
     color: #486AE1;
     font-size: 25px;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+}
+
+.galaxyWatch .galaxy-wearable:hover {
+    font-size: 145%;
+    font-weight: bold;
+    color: #183ab7;
 }
 
 .main-wearUi {

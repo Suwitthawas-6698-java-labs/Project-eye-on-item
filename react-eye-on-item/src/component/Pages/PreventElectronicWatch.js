@@ -83,7 +83,7 @@ function PreventElectronicWatch() {
                 <div className='text-smartWatch'>
                   <h1>โหลดแอปพลิเคชัน Smart Watch</h1>
                   <div className='galaxyWatch'>
-                    <a>เช่น <span>Galaxy Wearable</span></a>
+                    <a>เช่น <a href='https://www.samsung.com/us/support/owners/app/galaxy-wearable-watch' className='galaxy-wearable'>Galaxy Wearable<i class="fi fi-br-arrow-up-right-from-square"></i></a></a>
                     <img src={appWear} className='appWear' />
                   </div>
                   <a>ที่มีฟังก์ชันการใช้งานคล้ายกับ Apple Watch
@@ -93,25 +93,25 @@ function PreventElectronicWatch() {
                   <div className='wearUi'>
                     <div className='bar'></div>
                     <div className='watch-info-ui'>
-                        <div className='contain-logo-watch'>
-                          <img src={watchUi} className='watch-logo'/>
-                        </div>
-                        <div className='contain-text-info'>
-                          <h4>Galaxy Watch</h4>
-                          <h5>******************</h5>
-                          <h6>Last updated Now</h6>
-                        </div>
+                      <div className='contain-logo-watch'>
+                        <img src={watchUi} className='watch-logo' />
+                      </div>
+                      <div className='contain-text-info'>
+                        <h4>Galaxy Watch</h4>
+                        <h5>******************</h5>
+                        <h6>Last updated Now</h6>
+                      </div>
                     </div>
                     <div className='option-ui'>
                       <div className='contain-navi'>
                         <div className='navi-logo'>
-                          <img src={navi} className='navi'/>
+                          <img src={navi} className='navi' />
                         </div>
                         <a>Navigate</a>
                       </div>
                       <div className='contain-ring'>
                         <div className='ring-logo'>
-                          <img src={ring} className='ring'/>
+                          <img src={ring} className='ring' />
                         </div>
                         <a>Ring</a>
                       </div>

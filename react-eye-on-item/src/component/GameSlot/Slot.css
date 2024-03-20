@@ -1,0 +1,31 @@
+:root {
+    --icon-width: 79px;
+    --icon-height: 79px;
+    --num-icons: 9;
+}
+.side-slot {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%; /* ปรับเป็น 100% */
+    max-width: 100%; /* เพิ่ม max-width */
+}
+
+.slots {
+    width: 310px ;
+    /* height: px ; */
+    border: 1px solid white;
+    padding: 23.7px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    .reel {
+        border: 1px solid black;
+        width: 79px;
+        height: 237px;
+        background-image: url(https://assets.codepen.io/439000/slotreel.webp);
+		background-position: 0 0;
+		background-repeat: repeat-y;
+    }  
+}

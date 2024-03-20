@@ -86,6 +86,29 @@ function PreventElectronicLaptop() {
                     เพื่อให้ง่าย และสะดวกต่อการพกพา  ทริค : อาจจะหาพวง
                     กุญแจที่ชอบมาใส่กระเป๋าเพื่อแสดงความเป็นเจ้าของเพิ่มได้</a>
                 </div>
+                {/* <div className='caseShop'>
+                    <div className='caseElement'>
+                      <div className='caseElement-info'>
+                          <img src={}/>
+                          <a>Casetify</a>
+                      </div>
+                      <a href='https://www.casetify.com/th_TH/gadgets/phone-strap-with-card?DG=Accessories&D_Accessories=Phone+Strap+with+Card'><button>Buy</button></a>
+                    </div>
+                    <div className='caseElement'>
+                      <div className='caseElement-info'>
+                          <img src={} />
+                          <a>425 Degree</a>
+                      </div>
+                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>Buy</button></a>
+                    </div>
+                    <div className='caseElement'>
+                      <div className='caseElement-info'>
+                          <img src={}/>
+                          <a>Luken</a>
+                      </div>
+                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>Buy</button></a>
+                    </div>
+                </div> */}
               </div>
             </div>
           </Carousel>

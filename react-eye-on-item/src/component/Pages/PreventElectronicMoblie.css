@@ -169,25 +169,30 @@ ion-icon:hover {
 }
 
 .caseElement-info {
-    background-image: linear-gradient(transparent,rgb(255, 255, 255));
+    background-color: rgb(170, 170, 170);
+    box-shadow: 2px 5px 8px rgb(46, 46, 46);
     border-radius: 30px;
+    padding: 10px;
     width: 150px;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
     align-items: center;
     overflow: hidden;
 }
 
-.case-info {
-    display: flex;
-    justify-content: space-around;
+.caseElement-info a {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
+    padding: 10px 0;
+    font-size: 12px;
     width: 150px;
+    text-align: center;
 }
 .caseElement img{
    max-width: 100px;
-   height: 100px;
 }
 /* custom next previous arrow */
 .NextArrow, .PrevArrow {
