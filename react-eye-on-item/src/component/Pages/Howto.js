@@ -9,12 +9,42 @@ import social from '../Asset/social.svg';
 import softwaer from '../Asset/software.svg';
 import ask from '../Asset/ask.svg';
 import calmpv from '../Asset/calm-pv.svg';
-import lastactive from '../Asset/lastactive.svg';
+import lastActive from '../Asset/lastactive.svg';
+import area from '../Asset/area.svg';
+import space from '../Asset/space.svg';
+import blanket from '../Asset/blanket.svg';
 import NavbarPublic from '../Navbar/NavbarPublic';
-import NavbarPrivate from '../Navbar/NavbarPrivate';
-import Typewriter from 'typewriter-effect';
+import { Carousel } from 'react-responsive-carousel';
 
 function Howto() {
+
+  const renderCustomPrevArrow = (onClickHandler, hasPrev, label) => (
+    <button type="button" onClick={onClickHandler} disabled={!hasPrev} aria-label={label} className='PrivatePrevArrow'>
+      <span className="material-symbols-outlined">
+        chevron_left
+      </span>
+    </button>
+  );
+
+  const renderCustomNextArrow = (onClickHandler, hasNext, label) => (
+    <button type="button" onClick={onClickHandler} disabled={!hasNext} aria-label={label} className='PrivateNextArrow'>
+      <span className="material-symbols-outlined">
+        chevron_right
+      </span>
+    </button>
+  );
+
+  const renderCustomIndicator = (clickHandler, isSelected, index, label) => (
+    <div
+      className={`indicatorPrivateplace ${isSelected ? 'selected' : ''}`}
+      aria-label={`Slide ${index + 1}`}
+      onClick={clickHandler}
+      onKeyDown={clickHandler}
+      role="button"
+      tabIndex={0}
+      title={`${label} ${index + 1}`}
+    />
+  );
 
   const publicPlaceRef = useRef(null);
   const privatePlaceRef = useRef(null);
@@ -109,34 +139,52 @@ function Howto() {
           <h3><span>PRIVATE PLACE</span></h3>
       </div>
       <div className='privateplace1' id='privatePlace1'>
-        <NavbarPrivate/>
-        <h1>สูดหายใจเข้าลึก ๆ ใจเย็น ๆ</h1>
-        <a>การหาของที่หายไป แบบล่กหรือรีบร้อนจะทำให้เรายิ่งหาไม่เจอกว่าเดิม ดังนั้นการหายใจเข้าลึกๆ ช่วยให้เรามีสมาธิมากยิ่งขึ้น</a>
-        <aside><img src={calmpv} alt="calmpv" /></aside>
-      </div>
-      <div className='privateplace2' id='privatePlace2'>
-        <NavbarPrivate/>
-        <h1>ใช้ล่าสุดตรงไหน ไปดูตรงนั้น</h1>
-        <a>ดูบริเวณบนที่วางไว้หรือ อาจจะหล่น ของที่หายอาจจะอยู่ในที่ที่เราคาดไม่ถึง เช่น หากใช้งานล่าสุดอยู่บนโต๊ะอ่านหนังสือ ของชิ้นนั้นอาจจะอยู่บนโต๊ะอ่านหนังสือโต๊ะนั้น แต่โดนกองหนังสือทับไว้อยู่ก็เป็นได้</a>
-        <aside><img src={lastactive} alt="lastactive" /></aside>
-      </div>
-      <div className='privateplace3' id='privatePlace3'>
-        <NavbarPrivate/>
-        <h1>บริเวณช่องว่างระหว่างที่นอน</h1>
-        <a>ที่ที่มีช่องว่างมักจะเป็นที่ดึงดูดของสิ่งของที่เราต้องการใช้งานมากที่สุด บางครั้งเราอาจจะใช้งานอยู่ แต่พอรู้ตัวอีกทีก็หาไม่เจอแล้วซึ่งการหาตามที่ที่มีช่องว่างเล็กๆ อาจจะเป็นตัวเลือกที่ดี</a>
-        <aside><img src={lastactive} alt="lastactive" /></aside>
-      </div>
-      <div className='privateplace4' id='privatePlace4'>
-        <NavbarPrivate/>
-        <h1>ใต้ผ้าปูที่นอนหรือผ้าห่ม</h1>
-        <a>สำหรับคนที่ชอบวางอะไรไว้บนที่นอน ทางเลือกนี้จะเป็นทางเลือกหนึ่งที่มีประโยชน์มากเราจะจำว่าเราวางอะไรบนที่นอนได้แค่ในตอนแรก แต่ถ้าผ่านไป 3-4 ชั่วโมงเราก็อาจจะลืมได้โดยที่เราไม่รู้ตัว</a>
-        <aside><img src={lastactive} alt="lastactive" /></aside>
-      </div>
-      <div className='privateplace5' id='privatePlace5'>
-        <NavbarPrivate/>
-        <h1>พื้นที่ใช้งานบ่อยๆ</h1>
-        <a>เพราะพื้นที่ส่วนตัวของเรา เราอาจจะเข้าไปอยู่บ่อยที่สุดบางครั้งก็เผลอหยิบจับอะไรเข้าไปหรือวางทิ้งเอาไว้จนลืม</a>
-        <aside><img src={lastactive} alt="lastactive" /></aside>
+          <div className='privateplace-label'>
+            <h1>วิธีปฏิบัติตัวเบื้องต้นเมื่อรู้ว่า<span>ของหายในพื้นที่ส่วนตัว</span></h1>
+          <h2>เช่น บ้าน หอพัก</h2>
+          </div>
+
+          <Carousel className='private-carousel'
+            renderIndicator={renderCustomIndicator}
+            showStatus={false}
+            showThumbs={false}
+            infiniteLoop={true}
+            renderArrowNext={renderCustomNextArrow}
+            renderArrowPrev={renderCustomPrevArrow}
+            width={1320}
+          >
+            <div className='private-slide'>
+              <div className='element-private'>
+                <h3>สูดหายใจเข้าลึก ๆ ใจเย็นๆ</h3>
+                <a>การหาของที่หายไป แบบลกหรือรีบร้อนจะทำให้ <br/>เรายิ่งหาไม่เจอกว่าเดิม ดังนั้นการหายใจเข้าลึกๆ <br/>ช่วยให้เรามีสมาธิมากยิ่งขึ้น</a>
+                <img src={calmpv} alt="calmpv" />
+              </div>
+              <div className='element-private'>
+                <h3>ใช้ล่าสุดตรงไหน ไปดูตรงนั้น</h3>
+                <a>ดูบริเวณบนที่วางไว้หรือ อาจจะหล่น ของที่หาย<br/>อาจจะอยู่ในที่ที่เราคาดไม่ถึง เช่น หากใช้งาน<br/>ล่าสุดอยู่บนโต๊ะอ่านหนังสือ ของชิ้นนั้น<br/>อาจจะอยู่บนโต๊ะอ่านหนังสือโต๊ะนั้น <br/>แต่โดนกองหนังสือทับไว้อยู่ก็เป็นได้</a>
+                <img className='last' src={lastActive} alt="lastActive" />
+              </div>
+            </div>
+            <div className='private1-slide'>
+              <div className='element1-private'>
+                <h3>ลองดูที่ซอกที่นอนหรือบริเวณที่มีช่องว่าง</h3>
+                <a>ที่ที่มีช่องว่างมักจะเป็นที่ดึงดูดของสิ่งของ<br/>ที่เราต้องการใช้งานมากที่สุด บางครั้ง<br/>เราอาจจะใช้งานอยู่ แต่พอรู้ตัว<br/>อีกทีก็หาไม่เจอแล้วซึ่งการหาตาม<br/>ที่ที่มีช่องว่างเล็กๆ <br/>อาจจะเป็นตัวเลือกที่ดี</a>
+                <img src={space} alt="space" />
+              </div>
+              <div className='element1-private'>
+                <h3>ดูในผ้าปูที่นอนหรือผ้าห่ม </h3>
+                <a>สำหรับคนที่ชอบวางอะไรไว้บนที่นอน ทางเลือกนี้<br/>จะเป็นทางเลือกหนึ่งที่มีประโยชน์มากเราจะ<br/>จำว่าเราวางอะไรบนที่นอนได้แค่ใน<br/>ตอนแรก แต่ถ้าผ่านไป 3-4 ชั่วโมง<br/>เราก็อาจจะลืมได้โดยที่เราไม่รู้ตัว</a>
+                <img className='blanket' src={blanket} alt="blanket" />
+              </div>
+            </div>
+            <div className='private2-slide'>
+              <div className='element2-private'>
+                <h3>พื้นที่ที่ใช้งานบ่อย ๆ</h3>
+                <a>เช่น ระเบียง หน้าต่าง โต๊ะ เพราะพื้นที่<br/>ส่วนตัวของเรา เราอาจจะเข้าไปอยู่<br/>บ่อยที่สุดบางครั้งก็เผลอหยิบจับ<br/>อะไรเข้าไปหรือวางทิ้งเอาไว้จนลืม</a>
+                <img className='area' src={area} alt="area" />
+              </div>
+            </div>
+          </Carousel>
       </div>
     </div>
   )

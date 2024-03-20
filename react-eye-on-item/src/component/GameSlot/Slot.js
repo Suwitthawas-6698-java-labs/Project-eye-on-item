@@ -38,6 +38,8 @@ function Slot() {
                 //     reel.style.backgroundPositionY = `${normTargetBackgroundPositionY}px`;
                 //     // Resolve this promise
                 //     resolve(delta%num_icons);
+
+                
                 // }, (8 + 1 * delta) * time_per_icon + offset * 150);
             })
     };

@@ -18,9 +18,9 @@ function Navbar() {
       '/Prevent/Electronic/Moblie' : 'nav-PreventElectronic',
       '/Prevent/Electronic/Laptop' : 'nav-PreventElectronic',
       '/Prevent/Electronic/SmartWatch' : 'nav-PreventElectronic',
-      '/Prevent/Personal' : 'nav-PreventPerson',
-      '/Prevent/Etc' : 'nav-PreventEtc',
-      '/Prevent/Pet' : 'nav-PreventPet',
+      '/Prevent/Personal' : 'nav-PreventElectronic',
+      '/Prevent/Etc' : 'nav-PreventElectronic',
+      '/Prevent/Pet' : 'nav-PreventElectronic',
       // Add more pages and class names as needed
     };
 

@@ -37,7 +37,7 @@ function PreventPerson() {
   return (
     <div className='bg-PreventPerson'>
       <div className='Person-main'>
-        <div className='labelPerson'>
+        <div className='label'>
           <Link to={'/Prevent'} className='person-backto-prevent'><ion-icon name="arrow-back-circle"></ion-icon></Link>
           <a>ข้อมูลส่วนบุคคล</a>
         </div>
@@ -73,6 +73,16 @@ function PreventPerson() {
                   <p>1.เก็บไว้ให้เป็นระเบียบ เช่น มีกระเป๋าเพื่อเก็บของโดยเฉพาะ</p>
                   <p>2.ใช้ Magsafe Wallet Case เพื่อป้องกันบัตรหาย เช่น บัตรเคดิต บัตรประชาชน</p>
                   <p>3.สำหรับบัตรเครดิต ตอนที่กดเงินที่ตู้ATM ต้องตรวจดูบัตรเสมอ ว่าหยิบออกมาหรือยัง</p>
+                </div>
+                <div className='walletShop'>
+                  <div className='wallet-element'>
+                    <a>425 Degree</a>
+                    <a href='https://www.425degree.com/brand/moft/phones.html'><button>ซื้อ</button></a>
+                  </div>
+                  <div className='wallet-element'>
+                    <a>Casetify</a>
+                    <a href='https://www.casetify.com/gadgets/magsafe-wallet?DG=Accessories&D_Accessories=MagSafe+Wallet'><button>ซื้อ</button></a>
+                  </div>
                 </div>
               </div>
             </div>
