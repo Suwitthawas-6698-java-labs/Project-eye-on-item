@@ -93,7 +93,7 @@
 .header-slot {
     position: relative;
     scale: 50%;
-    top: 120px;
+    top: -250px;
     left: 10px;
 }
 
@@ -135,16 +135,47 @@ a8 {
     text-align: center;
     /* let text อยู่ตรงกลาง*/
 }
+.sanJao{
+    position: relative;
+    z-index: 1;
+    top: 950px;
+    scale: 150%;
+}
+
+.slot-element-side{
+    position: relative;
+    display: flex;
+    z-index: 0;
+    scale: 50%;
+}
+.slot-element-side-right {
+    position: relative;
+    top: 1050px;
+    left: 750px;
+}
+
+.slot-element-side-left {
+    position: relative;
+    top: 1050px;
+    right: 750px;
+}
+
+.element-slot-bg{
+    position: relative;
+    z-index: 2;
+    top: -225px;
+}
 
 .slot-layout {
     position: relative;
-    top: -40px;
+    top: -250px;
+    /* width: fit-content; */
 }
 
 .head-slot {
     position: relative;
     z-index: 2;
-    top: -540px;
+    top: -760px;
 }
 
 /* เว้นไว้สำหรับทำ element ใน slot page */

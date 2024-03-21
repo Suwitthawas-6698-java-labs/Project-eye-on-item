@@ -30,7 +30,12 @@ import muStar from '../Asset/MuShirtStar.svg'
 import SlotGame from '../GameSlot/Slot'
 import onSlot from '../Asset/Mu-onSlot.svg'
 import bgSlot from '../Asset/mu-bg-slot.svg'
-import headerSlot from '../Asset/MuSlotHeader.svg'
+import headerSlot from '../Asset/muSlotHeader2.svg'
+import muBgSlot from '../Asset/muSlotElementBig.svg'
+import muSlotsideLeft from '../Asset/muelementslotleft.svg'
+import muSlotsideRight from '../Asset/muelementslotRight.svg'
+
+
 
 function MuTeLoo() {
   {/* Part next and prev button for pray page */ }
@@ -72,11 +77,17 @@ function MuTeLoo() {
         </div>
       </div>
       <div className='slotPage' ref={useRefToSlotPage}>
-        {/* Slot*/}
-        <div className='header-slot'><img src={headerSlot} alt='header'/></div>
-        <div className='slot-layout' >
-          <SlotGame/>
-          <div className='head-slot'><img src= {onSlot} alt='Head slot'/></div>
+        <div className='sanJao'><img src={muBgSlot} alt='sanjao'/></div>
+        <div className='slot-element-side'>
+          <div className='slot-element-side-left'><img src={muSlotsideLeft} alt='left'/></div>
+          <div className='slot-element-side-right'><img src={muSlotsideRight} alt='side'/></div>
+        </div>
+        <div className='element-slot-bg'>
+          <div className='header-slot'><img src={headerSlot} alt='header'/></div>
+          <div className='slot-layout' >
+            <SlotGame/>
+            <div className='head-slot'><img src= {onSlot} alt='Head slot'/></div>
+          </div>
         </div>
         {/* <div className='textInfo-slotPage'>
             <h1>วันนี้คุณเสี่ยงโชคแล้วหรือยัง</h1>
