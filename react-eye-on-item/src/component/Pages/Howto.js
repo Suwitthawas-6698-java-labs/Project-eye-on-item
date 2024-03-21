@@ -13,7 +13,6 @@ import lastActive from '../Asset/lastactive.svg';
 import area from '../Asset/area.svg';
 import space from '../Asset/space.svg';
 import blanket from '../Asset/blanket.svg';
-import NavbarPublic from '../Navbar/NavbarPublic';
 import { Carousel } from 'react-responsive-carousel';
 
 function Howto() {
@@ -78,7 +77,7 @@ function Howto() {
       <div className='bg-howto'>
         <div className='text-intro'>
           <h1>How to ของหายทำอย่างไร?</h1>
-          <a>เมื่อของหายตามสถานที่ต่างๆว่าด้วยเรื่องของหาย บางครั้งอาจจะได้ของคืน หรืออาจจะต้องทำใจ<br /> ในส่วนนี้จะมีการบอกวิธีปฏิบัติตัวคร่าวๆ เมื่อของหายตามสถานที่ต่างๆ ซึ่งแบ่งออกเป็น ที่สาธารณะ<br />และพื้นที่ส่วนตัว </a>
+          <a>เมื่อของหายตามสถานที่ต่างๆว่าด้วยเรื่องของหาย บางครั้งอาจจะได้ของคืน<br /> หรืออาจจะต้องทำใจในส่วนนี้จะมีการบอกวิธีปฏิบัติตัวคร่าวๆ <br />เมื่อของหายตามสถานที่ต่างๆ ซึ่งแบ่งออกเป็น ที่สาธารณะ<br />และพื้นที่ส่วนตัว </a>
           <aside><img src={teach} alt="teach" /></aside>
         </div>
         <button style={specialButtonStyle} onClick={handleButtonClick}>Public Place</button>
