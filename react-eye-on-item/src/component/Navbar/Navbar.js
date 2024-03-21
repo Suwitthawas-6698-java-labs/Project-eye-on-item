@@ -56,7 +56,7 @@ function Navbar() {
           <li>
             <Link to={"/Mu-Te-Loo"}>
               <button className='muteloo'>
-                Mu-Te-Loo
+                Mu-Te-Lu
               </button>
             </Link>
           </li>

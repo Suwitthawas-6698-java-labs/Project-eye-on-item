@@ -4,13 +4,16 @@ import Typewriter from 'typewriter-effect';
 import nervous from '../Asset/nervous.svg';
 import bhuddalucky from '../Asset/bhuddalucky.svg';
 import ipad from '../Asset/ipad.svg';
+import tle from '../Asset/tle.svg';
+import aef from '../Asset/aef.svg';
+import pong from '../Asset/pong.svg';
 import { Link } from 'react-router-dom';
 import { useHref } from 'react-router-dom';
 
 const Home = () => {
   const hrefToHowto = useHref('/Howto'),
-        hrefToMuteloo = useHref('/Mu-Te-Loo'),
-        hrefToPrevent  = useHref('/Prevent');
+    hrefToMuteloo = useHref('/Mu-Te-Loo'),
+    hrefToPrevent = useHref('/Prevent');
   return (
     <div className='Home'>
       <div className='bg'>
@@ -67,12 +70,20 @@ const Home = () => {
       <footer>
         <div className='main-footer'>
           <h1>Contact Us</h1>
-          <a>OUR CONTACT</a>
-          <ul>
-            <li>suwitthawas.h@kkumail.com</li>
-            <li>parinda.ko@kkumail.com</li>
-            <li>yuttana.h@kkumail.com</li>
-          </ul>
+          <div className='main-contact'>
+            <div className='contact-element'>
+              <img src={pong} />
+              <a href='mailto:parinda.ko@kkumail.com'><i class="fa-solid fa-envelope"></i>parinda.ko@kkumail.com</a>
+            </div>
+            <div className='contact-element'>
+              <img src={aef} />
+              <a href='mailto:yuttana.h@kkumail.com'><i class="fa-solid fa-envelope"></i>yuttana.h@kkumail.com</a>
+            </div>
+            <div className='contact-element'>
+              <img src={tle} />
+              <a href='mailto:suwitthawas.h@kkumail.com'><i class="fa-solid fa-envelope"></i>suwitthawas.h@kkumail.com</a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

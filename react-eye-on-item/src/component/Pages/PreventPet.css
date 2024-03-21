@@ -12,3 +12,40 @@
     width: 600px;
     height: 400px;
 }
+
+.collarShop {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.collar-element button {
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.collar-element button:hover {
+    background-color: white;
+}
+
+.collar-element img{
+    max-width: 100px;
+ }
+
+ .collar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ } 
+
+ .collar-info:hover {
+    color: black;
+ }
