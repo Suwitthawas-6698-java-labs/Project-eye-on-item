@@ -18,7 +18,7 @@
 }
 
 .text-intro a {
-    font-size: 20px;
+    font-size: 29px;
     position: absolute;
     left: 65px;
     top: 300px;
@@ -163,7 +163,7 @@
 .element1-public {
     width: 645px;
     height: 350px;
-    background-color: #C0D8F4;
+    background-color: #F1D7D1;
     border-radius: 38px;
     overflow: hidden;
     padding: 15px 35px ;
@@ -202,7 +202,7 @@
 .element2-public {
     width: 645px;
     height: 350px;
-    background-color: #C0D8F4;
+    background-color: #F1D7D1;
     border-radius: 38px;
     overflow: hidden;
     padding: 15px 35px ;
@@ -241,7 +241,7 @@
 .element3-public {
     width: 645px;
     height: 350px;
-    background-color: #C0D8F4;
+    background-color: #F1D7D1;
     border-radius: 38px;
     overflow: hidden;
     padding: 15px 35px ;
@@ -493,7 +493,7 @@
 
 .PrivateNextArrow:hover,
 .PrivatePrevArrow:hover {
-    background-color: #C0D8F4;
+    background-color: #aaaaaa;
     color: rgb(0, 15, 52);
 }
 
