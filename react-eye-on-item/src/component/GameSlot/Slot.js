@@ -27,6 +27,7 @@ function Slot() {
             // console.log("delta: " + delta);
             // console.log("resolve :" + resolve); // native code
 
+
             //delay time out
             setTimeout(() => {
                 // Set transition properties ==> https://cubic-bezier.com/#.41,-0.01,.63,1.09
@@ -37,7 +38,26 @@ function Slot() {
             }, offset * 150);
             // after time out
         })
-    };
+
+                setTimeout(() => { 
+                    // Set transition properties ==> https://cubic-bezier.com/#.41,-0.01,.63,1.09
+                    reel.style.transition = `background-position-y ${(8 + 1 * delta) * time_per_icon}ms cubic-bezier(.41,-0.01,.63,1.09)`;
+                    // Set background position
+                    reel.style.backgroundPositionY = `${backgroundPositionY + delta * icon_height}px`;
+                }, offset * 150);
+
+                // setTimeout(() => {
+                //     // Reset position, so that it doesn't get higher without limit
+                //     reel.style.transition = `none`;
+                //     reel.style.backgroundPositionY = `${normTargetBackgroundPositionY}px`;
+                //     // Resolve this promise
+                //     resolve(delta%num_icons);
+
+                
+                // }, (8 + 1 * delta) * time_per_icon + offset * 150);
+            };
+
+    
 
     function rollAll() {
         // let indexAll = [];  
@@ -55,8 +75,8 @@ function Slot() {
                 });
                 console.log("Indexes s:", indexes.map((i) => iconMap[i]).join(' - '));
                 //check win
-                if (indexes[0] === indexes[1] || indexes[1] === indexes[2]) {
-                    const winGame = indexes[0] === indexes[2] ? "allWin" : "someWin";
+                if (indexes[0] === indexes[1] || indexes[1] === indexes[2] || indexes[0] === indexes[2]) {
+                    const winGame = indexes[0] === indexes[1] ===indexes[2] ? "allWin" : "someWin";
                     Swal.fire({
                         title: "เริ่ด วันนี้มงลงแน่ เริ่มเลอ",
                         width: 600,
@@ -91,9 +111,10 @@ function Slot() {
                 }
 
             });
+        }
 
-        
-    }
+      
+    
    
 
 

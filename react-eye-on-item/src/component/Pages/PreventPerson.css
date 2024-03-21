@@ -1,5 +1,5 @@
 .bg-PreventPerson {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -27,24 +27,25 @@
 .text-info-element-Person {
     padding: 30px 55px;
     border-radius: 97px;
-    background-color: #5e5e5e;
+    background-image: linear-gradient(rgb(144, 144, 144),black);
     width: 600px;
     height: 400px;
 }
 
 .text-Person {
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .text-Person2 {
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     gap: 35px;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .text-Person h1 {
@@ -61,11 +62,39 @@
     list-style: inside;
 }
 
-.person-backto-prevent ion-icon {
-    color: #5e5e5e;
+.walletShop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
 }
 
-.person-backto-prevent ion-icon:hover {
+.wallet-element {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 175px;
+    height: 45px;
+    padding: 3px 5px;
+    box-shadow: 0px 2px 2px rgb(75, 75, 75);
+    color: white;
+}
+
+.wallet-element button{
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: white 1px solid;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.wallet-element button:hover {
+    background-color: white;
     color: black;
 }
 
@@ -88,8 +117,8 @@
 }
 
 .Person-NextArrow:hover, .Person-PrevArrow:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .Person-NextArrow {
@@ -116,7 +145,7 @@
   }
   
   .Person-indicator.selected {
-    background-color: rgb(0, 0, 0); /* Color when selected */
+    background-color: rgb(255, 255, 255); /* Color when selected */
   }
   
   .Person-indicator:not(.selected) {

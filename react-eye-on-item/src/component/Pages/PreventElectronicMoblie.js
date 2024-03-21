@@ -101,21 +101,21 @@ function PreventElectronicMoblie() {
                           <img src={casetify} alt='casetify' className='casetify'/>
                           <a>Casetify</a>
                       </div>
-                      <a href='https://www.casetify.com/th_TH/gadgets/phone-strap-with-card?DG=Accessories&D_Accessories=Phone+Strap+with+Card'><button>Buy</button></a>
+                      <a href='https://www.casetify.com/th_TH/gadgets/phone-strap-with-card?DG=Accessories&D_Accessories=Phone+Strap+with+Card'><button>ซื้อ</button></a>
                     </div>
                     <div className='caseElement'>
                       <div className='caseElement-info'>
                           <img src={degree425} alt='case425degree'/>
                           <a>425 Degree</a>
                       </div>
-                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>Buy</button></a>
+                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>ซื้อ</button></a>
                     </div>
                     <div className='caseElement'>
                       <div className='caseElement-info'>
                           <img src={luken} alt='lukenCase'/>
                           <a>Luken</a>
                       </div>
-                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>Buy</button></a>
+                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>ซื้อ</button></a>
                     </div>
                 </div>
               </div>

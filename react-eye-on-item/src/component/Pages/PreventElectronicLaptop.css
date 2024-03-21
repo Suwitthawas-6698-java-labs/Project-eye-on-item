@@ -22,3 +22,32 @@
     color: white;
     font-size: 20px;
 }
+
+.stickerShop {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.stickerShop a button {
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: white;
+    border: white 1px solid;
+    font-size: 14px;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.stickerShop a button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.stickerShop button:hover i.fa-heart {
+    font-style: normal; /* Remove italic style */
+    font-weight: 900; /* Set font weight to bold (solid heart) */
+    color: rgb(255, 37, 37); /* Change color to red or any other color you prefer */
+  }

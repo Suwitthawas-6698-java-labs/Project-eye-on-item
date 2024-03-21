@@ -1,5 +1,5 @@
 .bg-PreventPet {
-    background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(255, 255, 255));
+    background-color: black;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -8,15 +8,7 @@
 .text-info-element-Pet {
     padding: 30px 55px;
     border-radius: 97px;
-    background-color: #000000;
+    background-image: linear-gradient(rgb(144, 144, 144),black);
     width: 600px;
     height: 400px;
-}
-
-.pet-backto-prevent ion-icon {
-    color: #ffffff;
-}
-
-.pet-backto-prevent ion-icon:hover {
-    color: gray;
 }

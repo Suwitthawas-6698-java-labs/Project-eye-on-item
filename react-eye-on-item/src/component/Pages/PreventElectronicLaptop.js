@@ -11,6 +11,9 @@ import fSt from '../Asset/fSt.png';
 import rabbitSt from '../Asset/rabbitSt.png';
 import corgiSt from '../Asset/corgiSt.png';
 import flowerSt from '../Asset/flowerSt.png';
+import bagstudio7 from '../Asset/bagstudio7.png';
+import bagsamsonite from '../Asset/bagsamsonite.png';
+import bag425degree from '../Asset/bag425degree.png';
 import { Link } from 'react-router-dom';
 
 function PreventElectronicLaptop() {
@@ -74,6 +77,14 @@ function PreventElectronicLaptop() {
                     <img src={flowerSt} alt='' className='flowerSt' />
                   </div>
                   <a>เพื่อแสดงถึงตัวตนของคุณและง่ายต่อการจดจำ</a>
+                  <div className='stickerShop'>
+                    <a href='https://www.punpro.com/p/Shopee-sticker-cute-5-baht'>
+                      <button>รวมร้านสติ๊กเกอร์น่ารักๆ <i class="far fa-heart"></i></button>
+                    </a>
+                    <a href='https://www.wongnai.com/articles/laptop-decor-sticker-shops'>
+                      <button>รวมร้านสติ๊กเกอร์แต่งโน้ตบุ๊กสุดคิ้วท์ใน IG <i class="fa-regular fa-heart"></i></button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,29 +97,29 @@ function PreventElectronicLaptop() {
                     เพื่อให้ง่าย และสะดวกต่อการพกพา  ทริค : อาจจะหาพวง
                     กุญแจที่ชอบมาใส่กระเป๋าเพื่อแสดงความเป็นเจ้าของเพิ่มได้</a>
                 </div>
-                {/* <div className='caseShop'>
+                <div className='caseShop'>
                     <div className='caseElement'>
                       <div className='caseElement-info'>
-                          <img src={}/>
-                          <a>Casetify</a>
+                          <img src={bagsamsonite}/>
+                          <a>Samsonite</a>
                       </div>
-                      <a href='https://www.casetify.com/th_TH/gadgets/phone-strap-with-card?DG=Accessories&D_Accessories=Phone+Strap+with+Card'><button>Buy</button></a>
+                      <a href='https://www.samsonite.co.th/th/backpacks/business/?start=0&sz=30'><button>ซื้อ</button></a>
                     </div>
                     <div className='caseElement'>
                       <div className='caseElement-info'>
-                          <img src={} />
+                          <img src={bagstudio7} />
+                          <a>Studio7</a>
+                      </div>
+                      <a href='https://www.studio7thailand.com/th/p/apple-lifestyle-gadget/gadget-bag'><button>ซื้อ</button></a>
+                    </div>
+                    <div className='caseElement'>
+                      <div className='caseElement-info'>
+                          <img src={bag425degree}/>
                           <a>425 Degree</a>
                       </div>
-                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>Buy</button></a>
+                      <a href='https://www.425degree.com/brand/tomtoc-slash-t64-laptop-backpack-16-green.html'><button>ซื้อ</button></a>
                     </div>
-                    <div className='caseElement'>
-                      <div className='caseElement-info'>
-                          <img src={}/>
-                          <a>Luken</a>
-                      </div>
-                      <a href='https://www.425degree.com/accessories/other/strap.html?orderby=price&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhP0xpFJR0FCTpqg-bQLS2NLh1KwgqtmAj0VpcEW6RKZHqQEBRRGdYMaAuxIEALw_wcB'><button>Buy</button></a>
-                    </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </Carousel>
