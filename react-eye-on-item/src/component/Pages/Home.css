@@ -111,7 +111,37 @@
 
 footer {
     width: 100vw;
-    height: 250px;
+    height: 240px;
     background-color: #B2442B;
-    padding: 20px 50px;
+    overflow: hidden;
+}
+
+.main-footer h1{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.main-contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-element img{
+    max-width: 100px;
+}
+
+.contact-element a{
+    color: white;
+    text-decoration: none;
 }
