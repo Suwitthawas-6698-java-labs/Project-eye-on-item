@@ -1,6 +1,7 @@
 import React from 'react'
 import './MuTeLoo.css';
-import pray from '../Asset/pray.svg';
+import { useRef } from 'react';
+import pray from '../Asset/Mu-first-prayElement.svg';
 import head from '../Asset/textColorShirtPic.svg';
 import monShirt from '../Asset/ShirtMonday.svg';
 import tuesShirt from '../Asset/ShirtTuesday.svg';
@@ -27,6 +28,9 @@ import muSunPray from '../Asset/MuSunPray.svg'
 import muPrayHeader from '../Asset/MuPrayHeader.svg'
 import muStar from '../Asset/MuShirtStar.svg'
 import SlotGame from '../GameSlot/Slot'
+import onSlot from '../Asset/Mu-onSlot.svg'
+import bgSlot from '../Asset/mu-bg-slot.svg'
+import headerSlot from '../Asset/MuSlotHeader.svg'
 
 function MuTeLoo() {
   {/* Part next and prev button for pray page */ }
@@ -46,6 +50,13 @@ function MuTeLoo() {
       </span>
     </button>
   );
+  const useRefToSlotPage = useRef(null);
+  
+  const slideToSlotPage = () => {
+    if (useRefToSlotPage.current) {
+      useRefToSlotPage.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
 
   return (
@@ -57,13 +68,15 @@ function MuTeLoo() {
             <a>วิถีสายมู จะมีการเล่นเกมเสี่ยงโชคของคุณ ทั้งยังมีบทสวดมนต์เสริมโชคประจำวันเกิด และสุดท้ายจะมีตารางสีเสื้อมงคลนำโชคประจำวัน</a>
             <aside><img src={pray} alt="pray" /></aside>
           </div>
-          <button>Scroll down</button>
+          <button className='button-to-slot'  onClick={slideToSlotPage}>ไปกันเลย!</button>
         </div>
       </div>
-      <div className='slotPage'>
+      <div className='slotPage' ref={useRefToSlotPage}>
         {/* Slot*/}
-        <div className='slot-layout'>
+        <div className='header-slot'><img src={headerSlot} alt='header'/></div>
+        <div className='slot-layout' >
           <SlotGame/>
+          <div className='head-slot'><img src= {onSlot} alt='Head slot'/></div>
         </div>
         {/* <div className='textInfo-slotPage'>
             <h1>วันนี้คุณเสี่ยงโชคแล้วหรือยัง</h1>
