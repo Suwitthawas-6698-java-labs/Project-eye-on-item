@@ -7,7 +7,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    /* border: 1px solid white; */
+
 }
 
 .side-slot {
@@ -16,24 +17,39 @@
     top: 0;
     height: 100%; /* ปรับเป็น 100% */
     max-width: 100%; /* เพิ่ม max-width */
-    opacity: 0;
+    opacity: 0; /* ทำให้ภาพมองไม่เห็น*/
+    border: none;
+}
+.slot-border {
+    position: relative;
+    z-index: 2;
+    /* border: 1px solid white; */
+    top: -14vh;
+    width: 300px;
+    height: 325px;
 }
 
 .slots {
-    width: 310px ;
+    position: relative;
+    width: 300px ;
     /* height: px ; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 23.7px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    background-color: white;
+    background-color: rgb(204, 35, 35);
+    z-index: 1;
+    top: 30vh;
+    border-radius: 60px;
+
 
     .reel {
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 79px;
         height: 237px;
-        background-image: url(https://assets.codepen.io/439000/slotreel.webp);
+        /* background-image: url(https://assets.codepen.io/439000/slotreel.webp); */
+        background-image: url('../Asset/muSlotRell.png');
 		background-position: 0 0;
 		background-repeat: repeat-y;
     }  
@@ -60,21 +76,26 @@
 }
 
 .slot-button-class{
+    position: relative;
+    top: -70px;
     display: inline-block;
     padding: 15px 30px;
-    background-color: rgba(255, 52, 72, 1);
-    color: white;
+    background-color: white;
+    color: rgb(203, 27, 0);
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s ease-in-out; /* เพิ่ม transition เมื่อ hover */
+    /* box-shadow: 0 5px 30px rgba(248, 47, 47, 0.3); */
 }
 .slot-button-class:hover{
-    background-color: rgb(184, 16, 16)
+    background-color: rgb(203, 27, 0);
+    background: white;
+    
 }
 .slot-button-class:active {
-    transform: translateY(2px);
+    transform: translateY(10px);
 }
 
 /* .Swal-backdrop::before {

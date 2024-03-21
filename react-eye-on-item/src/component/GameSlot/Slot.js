@@ -2,7 +2,8 @@ import React from "react";
 import './Slot.css';
 import { useState } from "react";
 import Swal from 'sweetalert2'
-
+import slotComponent from '../Asset/bg-slot.png'
+import muSide from '../Asset/muSlotRell.png'
 
 
 function Slot() {
@@ -10,7 +11,8 @@ function Slot() {
         icon_height = 79,
         num_icons = 9,
         time_per_icon = 100,
-        iconMap = ["banana", "seven", "cherry", "plum", "orange", "bell", "bar", "lemon", "melon"];
+        iconMap = ["banana", "seven", "cherry", "plum", "orange", "bell", "bar", "lemon", "melon"],
+        iconMu = ["moon" , "vishnu", "cat", "fish", "brahma", "tarot", "wessuwan", "cruise", "elephant"];
     let indexes = [0, 0, 0];
 
 
@@ -39,25 +41,23 @@ function Slot() {
             // after time out
         })
 
-                setTimeout(() => { 
-                    // Set transition properties ==> https://cubic-bezier.com/#.41,-0.01,.63,1.09
-                    reel.style.transition = `background-position-y ${(8 + 1 * delta) * time_per_icon}ms cubic-bezier(.41,-0.01,.63,1.09)`;
-                    // Set background position
-                    reel.style.backgroundPositionY = `${backgroundPositionY + delta * icon_height}px`;
-                }, offset * 150);
+        // setTimeout(() => {
+        //     // Set transition properties ==> https://cubic-bezier.com/#.41,-0.01,.63,1.09
+        //     reel.style.transition = `background-position-y ${(8 + 1 * delta) * time_per_icon}ms cubic-bezier(.41,-0.01,.63,1.09)`;
+        //     // Set background position
+        //     reel.style.backgroundPositionY = `${backgroundPositionY + delta * icon_height}px`;
+        // }, offset * 150);
 
-                // setTimeout(() => {
-                //     // Reset position, so that it doesn't get higher without limit
-                //     reel.style.transition = `none`;
-                //     reel.style.backgroundPositionY = `${normTargetBackgroundPositionY}px`;
-                //     // Resolve this promise
-                //     resolve(delta%num_icons);
+        // setTimeout(() => {
+        //     // Reset position, so that it doesn't get higher without limit
+        //     reel.style.transition = `none`;
+        //     reel.style.backgroundPositionY = `${normTargetBackgroundPositionY}px`;
+        //     // Resolve this promise
+        //     resolve(delta%num_icons);
 
-                
-                // }, (8 + 1 * delta) * time_per_icon + offset * 150);
-            };
 
-    
+        // }, (8 + 1 * delta) * time_per_icon + offset * 150);
+    };
 
     function rollAll() {
         // let indexAll = [];  
@@ -73,10 +73,10 @@ function Slot() {
                     console.log("Indexes In:", indexes);
                     // indexAll[i] = (indexes[i]);
                 });
-                console.log("Indexes s:", indexes.map((i) => iconMap[i]).join(' - '));
+                console.log("Indexes s:", indexes.map((i) => iconMu[i]).join(' - '));
                 //check win
                 if (indexes[0] === indexes[1] || indexes[1] === indexes[2] || indexes[0] === indexes[2]) {
-                    const winGame = indexes[0] === indexes[1] ===indexes[2] ? "allWin" : "someWin";
+                    const winGame = indexes[0] === indexes[1] === indexes[2] ? "allWin" : "someWin";
                     Swal.fire({
                         title: "เริ่ด วันนี้มงลงแน่ เริ่มเลอ",
                         width: 600,
@@ -94,7 +94,7 @@ function Slot() {
                               animate__animated
                               animate__fadeInUp
                               animate__faster
-                            ` 
+                            `
                         },
                         hideClass: {
                             popup: `
@@ -103,21 +103,15 @@ function Slot() {
                               animate__faster
                             `
                         }
-                    });  
-                    console.log("wingame"+winGame)
+                    });
+                    console.log("wingame" + winGame)
                     document.querySelector(".slots").classList.add(winGame);
                     //reset win game to normal by 2 second
                     setTimeout(() => document.querySelector(".slots").classList.remove(winGame), 2000);
                 }
 
             });
-        }
-
-      
-    
-   
-
-
+    }
 
     // const handleRoll = () => {
     //     const [rolling, setRolling] = useState(false);
@@ -131,11 +125,14 @@ function Slot() {
 
     return (
         <div className="slot-layout">
-            <div className="slots">
-                <div className="reel"></div>
-                <div className="reel"></div>
-                <div className="reel"></div>
-                <img className="side-slot" src="https://assets.codepen.io/439000/slotreel.webp" />
+            <div className="slot-panel">
+                <div className="slots">
+                    <div className="reel"></div>
+                    <div className="reel"></div>
+                    <div className="reel"></div>
+                    <img className="side-slot" src={muSide} />
+                </div>
+                <img className = "slot-border"src={slotComponent} alt="border slot"/>
             </div>
             <div className="slot-button">
                 <button className="slot-button-class" onClick={rollAll} >Start</button>
