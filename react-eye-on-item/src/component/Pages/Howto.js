@@ -69,13 +69,13 @@ function Howto() {
     borderRadius: '39px',          
     padding: '20px 60px',         
     cursor: 'pointer',
-    marginLeft: '30px', 
-    marginTop: '500px',
+    marginLeft: '50px', 
+    marginTop: '520px',
   };
 
   return (
     <div>
-      <div className='bg-overflow'>
+      <div className='bg-howto'>
         <div className='text-intro'>
           <h1>How to ของหายทำอย่างไร?</h1>
           <a>เมื่อของหายตามสถานที่ต่างๆว่าด้วยเรื่องของหาย บางครั้งอาจจะได้ของคืน หรืออาจจะต้องทำใจ<br /> ในส่วนนี้จะมีการบอกวิธีปฏิบัติตัวคร่าวๆ เมื่อของหายตามสถานที่ต่างๆ ซึ่งแบ่งออกเป็น ที่สาธารณะ<br />และพื้นที่ส่วนตัว </a>
@@ -92,47 +92,70 @@ function Howto() {
         </div>
       </div>
       <div className='publicplace1' id='publicPlace1'>
-        <NavbarPublic/>
-        <h1>ตั้งสติไม่ร้อนรน</h1>
-        <a>ตั้งสติ มีสมาธิ เช่น แหวนแต่งงานหาย แหวนเป็นของชิ้นเล็ก หากไม่มีสติ ใจร้อน อาจทำให้คุณมองข้ามสถานที่ที่คุณนึกไม่ถึง หรือคุณอาจจะค้นหาของได้อย่างไม่ละเอียดพอ</a>
-        <aside2><img src={calm1} alt="calm1" /></aside2>
+          <div className='privateplace-label'>
+            <h1>วิธีปฏิบัติตัวเบื้องต้นเมื่อรู้ว่า<span>ของหายในพื้นที่สาธารณะ</span></h1>
+            <h2>พื้นที่สาธารณะ คือ พื้นที่ส่วนรวมที่ทุกคนสามารถเข้าถึงและใช้ร่วมกันได้ <span>เช่น สวนสาธารณะ ห้างสรรพสินค้า</span></h2>
+          </div>
+
+          <Carousel className='public-carousel'
+            renderIndicator={renderCustomIndicator}
+            showStatus={false}
+            showThumbs={false}
+            infiniteLoop={true}
+            renderArrowNext={renderCustomNextArrow}
+            renderArrowPrev={renderCustomPrevArrow}
+            width={1320}
+          >
+            <div className='public-slide'>
+              <div className='element-public'>
+                <h3>ตั้งสติ ไม่ร้อนรน</h3>
+                <a>ตั้งสติ มีสมาธิ ไม่ร้อนรน เช่น แหวนแต่งงานหาย <br/>แหวนเป็นของชิ้นเล็กหากไม่มีสติ ใจร้อนอาจ<br/>ทำให้คุณมองข้ามสถานที่ที่คุณนึกไม่ถึง <br/>หรือคุณอาจจะค้นหาของได้อย่าง<br/>ไม่ละเอียดพอ</a>
+                <img src={calm1} alt="calm1" />
+              </div>
+              <div className='element-public'>
+                <h3>แจ้งประชาสัมพันธ์</h3>
+                <a>แจ้งประชาสัมพันธ์ในแต่ละพื้นที่ให้ประกาศตามหาของ<br/>หรืออาจจะมีคนนำของมาไว้ที่ประชาสัมพันธ์แล้ว<br/> เช่น ในห้างสรรพสินค้า แจ้งreception <br/>ให้ประชาสัมพันธ์</a>
+                <img className='reception' src={reception1} alt="reception1" />
+              </div>
+            </div>
+
+            <div className='public1-slide'>
+              <div className='element1-public'>
+                <h3>ลองดูก่อน</h3>
+                <a>เดินดูบริเวณสุดท้ายที่จำได้ว่าเห็นของชิ้นนั้น <br/>หรือเส้นทางที่เดินผ่านมา และสอบถามผู้คน<br/>บริเวณนั้น เช่น ถ้าไปวิ่งที่สวนสาธารณะ<br/>แล้วทำหูฟังหล่นหายลองเดินดูตาม<br/>เส้นทางที่วิ่งมา หรือสอบถาม<br/>คนที่มาวิ่งที่สวนสาธารณะ</a>
+                <img src={try1} alt="try1" />
+              </div>
+              <div className='element1-public'>
+                <h3>ของสำคัญ</h3>
+                <a>ถ้าหากเป็นของที่สำคัญ เช่น บัตรเครดิต <br/>ต้องโทรระงับการใช้งานกับทาง<br/>ธนาคารก่อน หรือ เป็นของ<br/>ที่มีมูลค่ามาก เราสามารถ<br/>ไปสถานีตำรวจเพื่อลง<br/>บันทึกประจำวันได้</a>
+                <img className='important' src={important1} alt="important1" />
+              </div>
+            </div>
+
+            <div className='public2-slide'>
+              <div className='element2-public'>
+                <h3>โซเชียลมีเดีย</h3>
+                <a>เมื่อจนแล้วจนรอดเรายังหาไม่เจอ เราสามารถ<br/>โพสต์ลงบนโซเชียลมีเดียเพื่อตามหาของ<br/>ชิ้นนั้นได้ หรือคอยดูความเคลื่อนไหว<br/>ว่ามีใครที่เก็บของเราได้หรือไม่</a>
+                <img src={social} alt="social" />
+              </div>
+
+              <div className='element2-public'>
+                <h3>ใช้ซอฟแวร์</h3>
+                <a>ถ้าเป็นอุปกรณ์อิเล็กทรอนิกส์ สามารถ<br/>ใช้แอพพลิเคชันที่เชื่อมต่อกับอุปกรณ์ <br/>เพื่อค้นหาตำแหน่งของอุปกรณ์ได้ <br/>เช่น find my app ของ iOS <br/>หรือ find my device <br/>ของ Android </a>
+                <img className='softwear' src={softwaer} alt="softwaer" />
+              </div>
+            </div>
+
+            <div className='public3-slide'>
+              <div className='element3-public'>
+                <h3>ลองถามก่อน</h3>
+                <a>สำหรับร้านอาหาร ร้านคาราโอเกะ หรือร้านสถานบันเทิง<br/> คุณสามารถถามที่ร้านได้ เพราะถ้าหาก<br/>เป็นของลูกค้า ทางร้านจะเก็บของ<br/>แยกไว้ให้อยู่แล้ว</a>
+                <img src={ask} alt="ask" />
+              </div>
+            </div>
+          </Carousel>
       </div>
-      <div className='publicplace2' id='publicPlace2'>
-        <NavbarPublic/>
-        <h1>แจ้งประชาสัมพันธ์</h1>
-        <a>แจ้งประชาสัมพันธ์ในแต่ละพื้นที่ให้ประกาศตามหาของ หรืออาจจะมีคนนำของมาแจ้งไว้ที่ประชาสัมพันธ์แล้ว เช่น หากของหายในห้างสรรพสินค้า ให้ไปที่ Reception เพื่อให้ช่วยประกาศตามหาของ</a>
-        <aside><img src={reception1} alt="reception1" /></aside>
-      </div>
-      <div className='publicplace3' id='publicPlace3'>
-      <NavbarPublic/>
-        <h1>ลองดูก่อน</h1>
-        <a>เดินดูบริเวณสุดท้ายที่จำได้ว่าเห็นของชิ้นนั้น หรือเส้นทางที่เดินผ่านมา และสอบถามผู้คนบริเวณรอบๆ เช่น ถ้าไปวิ่งที่สวนสาธารณะแล้วทำหูฟังหล่นหาย ลองเดินดูตามเส้นทางที่วิ่งมา หรือสอบถามคนที่มาวิ่งที่สวนสาธารณะ</a>
-        <aside><img src={try1} alt="try1" /></aside>
-      </div>
-      <div className='publicplace4' id='publicPlace4'>
-      <NavbarPublic/>
-        <h1>ของสำคัญ</h1>
-        <a>ถ้าหากเป็นของที่สำคัญ เช่น บัตรเครดิต ต้องโทรไปที่ธนาคารเพื่อระงับการใช้งานก่อน หรือเป็นของที่มีมูลค่ามากเราสามารถไปสถานีตำรวจเพื่อลงบันทึกประจำวันได้</a>
-        <aside><img src={important1} alt="important1" /></aside>
-        </div>
-      <div className='publicplace5' id='publicPlace5'>
-      <NavbarPublic/>
-          <h1>โซเซียลมีเดีย</h1>
-          <a>เมื่อจนแล้วจนรอดยังหาของไม่เจอ เราสามารถโพสต์ลงบนโซเซียลมีเดียเพื่อตามหาของชิ้นนั้นได้ หรือคอยดูความเคลื่อนไหวว่ามีใครเก็บของของเราได้หรือไม่</a>
-          <aside><img src={social} alt="social" /></aside>
-        </div>
-      <div className='publicplace6' id='publicPlace6'>
-      <NavbarPublic/>
-          <h1>ใช้ซอฟต์แวร์</h1>
-          <a>ถ้าเป็นอุปกรณ์อิเล็กทรอนิกส์สามารถใช้แอพพลิเคชันที่เชื่อมต่อกับอุปกรณ์เพื่อค้นหาตำแหน่งได้ เช่น find my app ของ IOS หรือ find my device ของ Android</a>
-          <aside><img src={softwaer} alt="softwaer" /></aside>
-        </div>
-      <div className='publicplace7' id='publicPlace7'>
-      <NavbarPublic/>
-          <h1>ลองถามก่อน</h1>
-          <a>สำหรับร้านอาหาร ร้านคาราโอเกะ หรือร้านสถานบันเทิง คุณสามารถไปสอบถามที่ร้านได้ เพราะถ้าหากเป็นของที่ลูกค้าลืมไว้ทางร้านจะเก็บไว้ให้แยกอยู่แล้ว</a>
-          <aside><img src={ask} alt="ask" /></aside>
-      </div>
+
       <div className='privateplace' ref={privatePlaceRef}>
           <h2><span>PRIVATE PLACE</span></h2>
           <h1>PRIVATE PLACE</h1>
@@ -141,7 +164,7 @@ function Howto() {
       <div className='privateplace1' id='privatePlace1'>
           <div className='privateplace-label'>
             <h1>วิธีปฏิบัติตัวเบื้องต้นเมื่อรู้ว่า<span>ของหายในพื้นที่ส่วนตัว</span></h1>
-          <h2>เช่น บ้าน หอพัก</h2>
+            <h2>พื้นที่ส่วนตัว คือ พื้นที่ที่เราใช้พักผ่อน รู้สึกปลอดภัย และทำในแบบที่ตนเองต้องการได้อย่างสบายใจ <span>เช่น บ้าน หอพัก</span></h2>
           </div>
 
           <Carousel className='private-carousel'
